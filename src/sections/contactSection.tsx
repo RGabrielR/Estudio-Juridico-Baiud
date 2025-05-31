@@ -20,6 +20,7 @@ const ContactSection = () => {
     <section
       className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-5 lg:flex-row lg:py-16 xl:max-w-[1380px]"
       ref={ref}
+      id="Contact"
     >
       <motion.div
         variants={fadeIn("left", 0)}

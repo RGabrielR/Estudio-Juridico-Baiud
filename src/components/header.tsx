@@ -31,6 +31,10 @@ const Header = () => {
       title: "Servicios",
       href: "#Services",
     },
+    {
+      title: "Contacto",
+      href: "#Contact",
+    },
   ];
 
   return (
@@ -44,7 +48,7 @@ const Header = () => {
           <NavbarBrand>
             <Image
               src={Logo}
-              alt="POWERVET"
+              alt="Logo de Estudio Juridico Baiud"
               sizes="100vw"
               height={0}
               width={0}
@@ -82,9 +86,9 @@ const Header = () => {
         <NavbarItem>
           <Link
             className="text-white transition-all duration-300 hover:font-bold"
-            href="#Plans"
+            href="#Contact"
           >
-            Planes
+            Contacto
           </Link>
         </NavbarItem>
       </NavbarContent>
