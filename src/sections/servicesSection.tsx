@@ -77,6 +77,12 @@ const ServicesSection = () => {
             className="h-14 w-full text-base font-medium text-white"
             color="primary"
             endContent={<IoCalendarOutline size={30} className="ml-2" />}
+            onClick={() => {
+              window.open(
+                "https://api.whatsapp.com/send/?phone=%2B543884881609&text&type=phone_number&app_absent=0",
+                "_blank",
+              );
+            }}
           >
             Agendar Consulta
           </Button>

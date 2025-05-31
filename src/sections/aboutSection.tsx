@@ -30,7 +30,7 @@ const AboutSection = () => {
           <div className="text-center">
             <span className="text-xl font-light text-yellow-800">SOBRE</span>
             <h2 className="text-3xl font-bold xl:text-4xl">
-              Descrubra porque damos la solución que necesita
+              Descubra porque damos la solución que necesita
             </h2>
           </div>
           <p className="text-center text-sm font-light md:text-base xl:text-lg">

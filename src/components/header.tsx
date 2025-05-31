@@ -98,7 +98,7 @@ const Header = () => {
             <Button
               as={Link}
               color="primary"
-              href="#"
+              href="https://www.facebook.com/profile.php?id=100089098967597"
               variant="flat"
               isIconOnly
               target="_blank"
@@ -111,7 +111,7 @@ const Header = () => {
             />
           </NavbarItem>
 
-          <NavbarItem>
+          {/* <NavbarItem>
             <Button
               as={Link}
               color="primary"
@@ -126,13 +126,13 @@ const Header = () => {
                 />
               }
             />
-          </NavbarItem>
+          </NavbarItem> */}
 
           <NavbarItem>
             <Button
               as={Link}
               color="primary"
-              href="#"
+              href="https://api.whatsapp.com/send/?phone=%2B543884881609&text&type=phone_number&app_absent=0"
               variant="flat"
               isIconOnly
               target="_blank"

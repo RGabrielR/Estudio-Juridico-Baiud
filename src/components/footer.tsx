@@ -36,20 +36,6 @@ interface FooterLinkProps {
   text: string;
 }
 
-function FooterLink({ text }: FooterLinkProps) {
-  return (
-    <p className="group flex cursor-pointer items-center justify-center gap-1">
-      <span
-        className="footerLink hidden group-hover:block group-hover:animate-spin"
-        style={{ animationIterationCount: 1, animationDuration: "0.3s" }}
-      >
-        <FaChevronRight size={12} className="text-yellow-200" />
-      </span>
-      {text}
-    </p>
-  );
-}
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -70,24 +56,6 @@ export default function Footer() {
           &copy; {currentYear} Estudio Jurídico Baiud - Todos los derechos
           reservados.
         </p>
-
-        <div className="flex gap-1">
-          <SocialLink
-            href="https://www.linkedin.com/in/gui-bus"
-            icon={<FaLinkedinIn size={20} />}
-            size="sm"
-          />
-          <SocialLink
-            href="https://github.com/gui-bus"
-            icon={<FaGithub size={20} />}
-            size="sm"
-          />
-          <SocialLink
-            href="https://www.instagram.com/guibus_dev"
-            icon={<FaInstagram size={20} />}
-            size="sm"
-          />
-        </div>
       </section>
     </footer>
   );
