@@ -16,7 +16,8 @@ const HeroSection = () => {
   return (
     <section
       ref={ref}
-      className="relative mx-auto flex w-full items-center justify-center bg-powerblue-dark bg-[url('/herobg.png')] bg-cover bg-center bg-no-repeat py-10 3xl:max-w-[1580px] 3xl:rounded-b-2xl" id="Home"
+      className="relative mx-auto flex w-full items-center justify-center bg-yellow-800 bg-[url('/herobg.png')] bg-cover bg-center bg-no-repeat py-10 3xl:max-w-[1580px] 3xl:rounded-b-2xl"
+      id="Home"
     >
       <motion.div
         variants={fadeIn("up", 0)}
@@ -26,15 +27,15 @@ const HeroSection = () => {
       >
         <div className="flex items-center justify-center">
           <div className="flex w-full flex-col items-center justify-center gap-10 lg:flex-row">
-            <div className="flex w-full flex-col items-center justify-center gap-7 px-8 text-center text-white lg:text-start 2xl:w-6/12">
+            <div className="flex w-full flex-col items-center justify-center gap-7 bg-black bg-opacity-40 p-10 px-8 text-center text-white shadow-lg  lg:text-start 2xl:w-6/12">
               <h1 className="text-3xl font-bold md:text-5xl 2xl:text-6xl">
-                A MELHOR ESCOLHA PARA O SEU PET
+                El asesoramiento que lo deja tranquilo
               </h1>
               <p className="text-sm font-extralight md:text-lg">
-                Na POWERVET, dedicamos nosso cuidado e expertise para garantir a
-                saúde e alegria contínuas do seu companheiro de quatro patas.
-                Oferecemos serviços veterinários excepcionais para manter seu
-                pet sempre saudável e feliz.
+                En nuestro estudio jurídico, dedicamos nuestro cuidado y
+                experiencia para garantizar la protección de tus derechos y el
+                bienestar de nuestros clientes. Ofrecemos servicios legales
+                excepcionales para mantener tu tranquilidad y confianza.
               </p>
               <Button
                 className="h-14 w-full text-base font-medium text-white"

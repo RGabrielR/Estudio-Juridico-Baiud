@@ -28,20 +28,13 @@ const Header = () => {
       href: "#Values",
     },
     {
-      title: "Serviços",
+      title: "Servicios",
       href: "#Services",
-    },
-    {
-      title: "Planos",
-      href: "#Plans",
     },
   ];
 
   return (
-    <Navbar
-      onMenuOpenChange={setIsMenuOpen}
-      className="bg-powerblue-light py-2"
-    >
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-yellow-800 py-2">
       <NavbarContent justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -83,7 +76,7 @@ const Header = () => {
             className="text-white transition-all duration-300 hover:font-bold"
             href="#Services"
           >
-            Serviços
+            Servicios
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -91,7 +84,7 @@ const Header = () => {
             className="text-white transition-all duration-300 hover:font-bold"
             href="#Plans"
           >
-            Planos
+            Planes
           </Link>
         </NavbarItem>
       </NavbarContent>

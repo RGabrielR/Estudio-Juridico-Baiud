@@ -43,7 +43,7 @@ function FooterLink({ text }: FooterLinkProps) {
         className="footerLink hidden group-hover:block group-hover:animate-spin"
         style={{ animationIterationCount: 1, animationDuration: "0.3s" }}
       >
-        <FaChevronRight size={12} className="text-powerblue-light" />
+        <FaChevronRight size={12} className="text-yellow-200" />
       </span>
       {text}
     </p>
@@ -53,34 +53,13 @@ function FooterLink({ text }: FooterLinkProps) {
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const departments = [
-    "Consultas Médicas",
-    "Vacinação",
-    "Cirurgias",
-    "Exames Laboratoriais",
-  ];
-
-  const institucionals = [
-    "Sobre a Clínica",
-    "Política de Privacidade",
-    "Nossos Profissionais",
-    "Depoimentos",
-  ];
-
-  const helps = [
-    "Agendamento de Consultas",
-    "Procedimentos e Prazos",
-    "Formas de Pagamento",
-    "Convênios e Parcerias",
-  ];
-
   return (
-    <footer className="dark:border-gamtech mx-auto w-full cursor-default items-center justify-center bg-powerblue-light pt-8 shadow-xl md:px-0">
+    <footer className="dark:border-gamtech mx-auto w-full cursor-default items-center justify-center bg-yellow-800 pt-8 shadow-xl md:px-0">
       <section className="flex flex-col items-center justify-around gap-y-4 px-4 pb-8 shadow-xl md:flex-row md:gap-y-0">
         <Link href="/">
           <Image
             src={Logo}
-            alt="POWERVET"
+            alt="estudio jurídico baiud"
             width={200}
             height={50}
             className="h-auto w-52 object-contain"
@@ -88,7 +67,8 @@ export default function Footer() {
         </Link>
 
         <p className="px-5 text-center text-sm text-white">
-          &copy; {currentYear} Clínica POWERVET - Todos os direitos reservados.
+          &copy; {currentYear} Estudio Jurídico Baiud - Todos los derechos
+          reservados.
         </p>
 
         <div className="flex gap-1">
@@ -109,51 +89,6 @@ export default function Footer() {
           />
         </div>
       </section>
-
-      <div className="bg-powerblue-dark px-4 py-6 text-white">
-        <section className="mx-auto flex flex-col items-center justify-center gap-3 text-center text-xs md:flex-row">
-          <div className="flex w-full flex-col gap-1">
-            <h3 className="text-base font-medium uppercase">Departamentos</h3>
-            {departments.map((department, index) => (
-              <FooterLink key={index} text={department} />
-            ))}
-          </div>
-
-          <div className="flex w-full flex-col gap-1">
-            <h3 className="text-base font-medium uppercase">Institucional</h3>
-            {institucionals.map((institucional, index) => (
-              <FooterLink key={index} text={institucional} />
-            ))}
-          </div>
-
-          <div className="flex w-full flex-col gap-1">
-            <h3 className="text-base font-medium uppercase">Dúvidas</h3>
-            {helps.map((help, index) => (
-              <FooterLink key={index} text={help} />
-            ))}
-          </div>
-        </section>
-
-        <section className="mx-auto flex flex-col items-center justify-center gap-2 px-8 pt-4 text-center text-xs">
-          <h3 className="text-base font-medium uppercase">Atendimento</h3>
-          <p>
-            A Clínica POWERVET oferece atendimento contínuo, 24 horas por dia, 7
-            dias por semana.
-          </p>
-
-          <div className="flex flex-col items-center justify-center gap-2 md:flex-row">
-            <div className="flex items-center justify-center gap-2">
-              <h3 className="font-medium uppercase">Telefone - </h3>
-              <p>+55 (12) 0000-0000</p>
-            </div>
-
-            <div className="flex items-center justify-center gap-2">
-              <h3 className="font-medium uppercase">E-mail - </h3>
-              <p>contato@powervet.com</p>
-            </div>
-          </div>
-        </section>
-      </div>
     </footer>
   );
 }

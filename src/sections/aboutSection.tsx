@@ -28,31 +28,30 @@ const AboutSection = () => {
       >
         <div className="flex w-full min-w-[50%] flex-col items-center justify-center gap-6 p-5">
           <div className="text-center">
-            <span className="text-xl font-light text-powerblue-light">
-              SOBRE
-            </span>
+            <span className="text-xl font-light text-yellow-800">SOBRE</span>
             <h2 className="text-3xl font-bold xl:text-4xl">
-              Descubra o que torna a POWERVET tão incrível!
+              Descrubra porque damos la solución que necesita
             </h2>
           </div>
           <p className="text-center text-sm font-light md:text-base xl:text-lg">
-            Bem-vindo à POWERVET, onde paixão pelos animais se une à excelência
-            veterinária. Desde nossa fundação, temos sido dedicados a
-            proporcionar cuidados excepcionais para os animais de estimação que
-            fazem parte da sua família. Aqui na POWERVET, entendemos que cada
-            animal é único, e é com esse entendimento que moldamos nossa
-            abordagem de cuidados veterinários.
+            Con años de experiencia en el sistema legal, puedo brindar
+            asesoramiento y representación legal de alta calidad. Mi compromiso
+            es entender las necesidades de mis clientes y proporcionar
+            soluciones efectivas y personalizadas. Con una solida reputacion en
+            el sector, estoy aqui para proteger tus derechos y alcanzar los
+            mejores resultados posibles.
           </p>
 
-          <div className="flex flex-col items-center justify-center rounded-2xl bg-powerblue-dark p-5 text-center xl:p-8">
-            <span className="flex items-center justify-center gap-4 text-2xl font-bold text-powerblue-light xl:text-4xl">
-              <TbTargetArrow size={50} /> NOSSA MISSÃO
+          <div className="flex flex-col items-center justify-center rounded-2xl bg-yellow-800 p-5 text-center xl:p-8">
+            <span className="flex items-center justify-center gap-4 text-2xl font-bold text-yellow-200 xl:text-4xl">
+              <TbTargetArrow size={50} /> NUESTRA MISIÓN
             </span>
             <p className="mt-5 text-sm font-extralight text-white md:text-base">
-              Na POWERVET, nossa missão é promover a saúde e o bem-estar dos
-              animais de estimação, oferecendo serviços veterinários de alta
-              qualidade. Acreditamos que cada pet merece uma vida saudável e
-              feliz, e estamos comprometidos em fornecer cuidados de elite.
+              En nuestro estudio jurídico, nuestra misión es promover la
+              justicia y el bienestar de nuestros clientes, ofreciendo servicios
+              legales de alta calidad. Creemos que cada persona merece una
+              representación legal efectiva y compasiva. Estamos comprometidos a
+              brindar atención de élite.
             </p>
           </div>
         </div>
@@ -60,7 +59,7 @@ const AboutSection = () => {
         <Image
           ref={refQuote}
           src={AboutMosaic}
-          alt="Mosaico de imagens da POWERVET"
+          alt="Mosaico de imágenes de Estudio Jurídico"
           sizes="100vw"
           width={0}
           height={0}

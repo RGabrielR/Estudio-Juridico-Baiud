@@ -15,7 +15,7 @@ const config: Config = {
         },
 
         primary: {
-          DEFAULT: "#2195E8",
+          DEFAULT: "#894b00",
           foreground: "#000000",
         },
         focus: "#BEF264",

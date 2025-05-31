@@ -30,26 +30,29 @@ const ContactSection = () => {
       >
         <div className="flex w-full flex-col gap-4 p-5 text-center lg:w-1/2">
           <div className="flex flex-col items-center justify-center gap-1">
-            <span className="text-xl font-light uppercase text-powerblue-light">
-              Localização e Contato
+            <span className="text-xl font-light uppercase text-yellow-800">
+              Contacto
             </span>
-            <h2 className="text-3xl font-bold xl:text-5xl">Clínica POWERVET</h2>
+            <h2 className="text-3xl font-bold xl:text-5xl">
+              Estudio Juridico Baiud
+            </h2>
           </div>
 
           <div>
             <div className="flex items-center justify-center gap-2">
-              <HiLocationMarker size={30} className="text-powerblue-light" />
+              <HiLocationMarker size={30} className="text-yellow-800" />
 
               <p className="text-xs font-light md:text-base xl:text-lg">
-                Rua dos Pets, 222 - Jardim das Indústrias, SJC - SP
+                Ramírez de Velazco 672 - San Salvador de Jujuy - Jujuy -
+                Argentina
               </p>
             </div>
 
             <div className="flex items-center justify-center gap-2">
-              <HiPhone size={30} className="text-powerblue-light" />
+              <HiPhone size={30} className="text-yellow-800" />
 
               <p className="text-xs font-light md:text-base xl:text-lg">
-                +55 (12) 0000-0000 | +55 (12) 90000-0000
+                +54 (388) 4881-609
               </p>
             </div>
           </div>
@@ -60,7 +63,7 @@ const ContactSection = () => {
               color="primary"
               endContent={<TbMapStar size={30} className="ml-2" />}
             >
-              Ver no Google Maps
+              Ver en Google Maps
             </Button>
             <Button
               className="h-14 w-full text-base font-medium text-white"
@@ -74,7 +77,7 @@ const ContactSection = () => {
 
         <Image
           src={Location}
-          alt="Imagem que ilustra a POWERVET"
+          alt="Imagen que ilustra a Estudio Juridico Baiud"
           sizes="100vw"
           width={0}
           height={0}

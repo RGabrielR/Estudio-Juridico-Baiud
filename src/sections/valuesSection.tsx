@@ -11,16 +11,16 @@ import { useInView } from "react-intersection-observer";
 
 const values: { title: string; text: string }[] = [
   {
-    title: "Compromisso com a Excelência",
-    text: "Buscamos a excelência em todos os aspectos dos nossos serviços, desde consultas de rotina até procedimentos cirúrgicos complexos. Nosso compromisso é fornecer o mais alto padrão de cuidado veterinário.",
+    title: "Compromiso con la excelencia",
+    text: "Buscamos la excelencia en todos los aspectos de nuestros servicios, desde su primera consulta hasta la ultima notificación de sus tramites. Nuestro compromiso es brindar un servicio de alta calidad que supere sus expectativas.",
   },
   {
-    title: "Empatia e Carinho",
-    text: "Compreendemos a importância do vínculo entre você e seu animal de estimação. Nosso pessoal é escolhido não apenas por sua experiência profissional, mas também por sua empatia e carinho pelos animais.",
+    title: "Empatía y Cuidado",
+    text: "Comprendemos que cada situación es única y requiere un enfoque personalizado. Nos preocupamos profundamente por el correcto manejo de sus asuntos legales brindando un servicio que lo haga sentir respaldado y comprendido.",
   },
   {
-    title: "Transparência e Comunicação",
-    text: "Valorizamos a comunicação aberta e transparente. Queremos que você esteja totalmente informado sobre as opções de tratamento para seu animal de estimação, permitindo que tome decisões informadas.",
+    title: "Transparencia y Comunicación",
+    text: "Valoramos la comunicación abierta y transparente. Queremos que esté totalmente informado sobre las opciones y el progreso de su caso, para que pueda tomar decisiones informadas en todo momento.",
   },
 ];
 
@@ -30,7 +30,7 @@ const ValuesSection = () => {
 
   return (
     <section
-      className="relative mx-auto flex  w-full flex-col items-center justify-center gap-10 bg-powerblue-dark bg-[url('/valuesbg.png')] bg-cover bg-center bg-no-repeat py-5 md:py-16 3xl:max-w-[1580px] 3xl:rounded-2xl"
+      className="relative mx-auto flex  w-full flex-col items-center justify-center gap-10 bg-yellow-800 bg-[url('/valuesbg.png')] bg-cover bg-center bg-no-repeat py-5 md:py-16 3xl:max-w-[1580px] 3xl:rounded-2xl"
       ref={ref}
     >
       <motion.div
@@ -41,10 +41,10 @@ const ValuesSection = () => {
         className="relative mx-auto flex  w-full flex-col items-center justify-center gap-10 bg-cover bg-center bg-no-repeat py-5 md:py-16 3xl:max-w-[1580px] 3xl:rounded-2xl"
       >
         <h2
-          className="flex items-center justify-center gap-5 text-2xl md:text-3xl font-bold text-white "
+          className="flex items-center justify-center gap-5 text-2xl font-bold text-white md:text-3xl "
           id="Values"
         >
-          NOSSOS VALORES <BsFillPatchCheckFill size={50} />
+          NUESTROS VALORES <BsFillPatchCheckFill size={50} />
         </h2>
 
         <div className="flex items-center justify-center">
@@ -74,7 +74,7 @@ const ValuesSection = () => {
             <div className="flex w-full flex-col items-center justify-center gap-7 px-8 text-center">
               {values.map((value, index) => (
                 <div key={index} className="w-full max-w-3xl">
-                  <p className="mx-auto w-[80%] rounded-t-2xl bg-powerblue-light p-2 font-bold text-white md:w-[60%]">
+                  <p className="mx-auto w-[80%] rounded-t-2xl bg-yellow-800 p-2 font-bold text-white md:w-[60%]">
                     {value.title}
                   </p>
                   <p className="rounded-2xl bg-white p-5 text-sm font-light text-black md:text-base xl:text-lg">

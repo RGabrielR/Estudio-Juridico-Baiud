@@ -9,28 +9,28 @@ import { useInView } from "react-intersection-observer";
 
 const services: { title: string; text: string }[] = [
   {
-    title: "CHECK-UPS REGULARES",
-    text: "Nossas consultas de rotina são projetadas para manter seu pet saudável em todas as fases da vida. Com exames abrangentes e aconselhamento especializado, estamos comprometidos em proporcionar uma vida longa e feliz ao seu animal de estimação.",
+    title: "CONSULTA JURÍDICA - ONLINE O PRESENCIAL",
+    text: "Ofrecemos consultas jurídicas personalizadas, tanto en línea como presenciales, para atender a sus necesidades jurídicas específicas. Nuestro equipo está listo para brindar orientación legal clara y eficaz, garantizando que reciba el apoyo necesario.",
   },
   {
-    title: "VACINAÇÃO COMPLETA",
-    text: "Oferecemos um programa de vacinação personalizado, adaptado às necessidades individuais do seu pet. Mantenha seu animal protegido contra doenças com nossas opções de imunização abrangentes, garantindo uma vida saudável.",
+    title: "REPRESENTACION JURÍDICA - JUICIOS NUEVOS O EN CURSO",
+    text: "Brindamos representación legal integral en juicios nuevos o en curso, asegurando que sus derechos estén protegidos en todo momento. Nuestro equipo de abogados experimentados está comprometido a luchar por sus intereses y alcanzar los mejores resultados posibles.",
   },
   {
-    title: "INTERVENÇÕES CIRÚRGICAS",
-    text: "Nossa equipe experiente realiza cirurgias e procedimentos médicos com o mais alto padrão de cuidado. Desde o  diagnóstico à recuperação, garantimos uma experiência tranquila para você e seu pet, focando sempre  na saúde e no conforto do seu pet.",
+    title: "TRAMITES ADMINISTRATIVOS, TRIBUTARIOS E INTERNACIONALES",
+    text: "Nos especializamos en la gestión de trámites administrativos, tributarios e internacionales, facilitando el proceso para nuestros clientes. Desde la presentación de documentos hasta la resolución de conflictos, nuestro equipo está aquí para simplificar sus obligaciones legales.",
   },
   {
-    title: "UM SORRISO SAUDÁVEL",
-    text: "A saúde bucal é crucial para o bem-estar geral do seu animal. Oferecemos serviços de odontologia veterinária, incluindo limpeza, extrações e orientações de cuidados em casa, para garantir um sorriso saudável e duradouro.",
+    title: "TRAMITES JUBILATORIOS",
+    text: "Brindamos asesoramiento y gestión en trámites jubilatorios, asegurando que nuestros clientes puedan acceder a sus derechos de manera efectiva. Nuestro equipo está preparado para guiarlo a través de todo el proceso, desde la documentación hasta la obtención de una jubilación adecuada a sus derechos.",
   },
   {
-    title: "ALIMENTAÇÃO PERSONALIZADA",
-    text: "Desenvolvemos planos nutricionais personalizados para atender às necessidades específicas do seu pet. Desde dietas especiais até aconselhamento sobre alimentação saudável, ajudamos a garantir uma nutrição ideal para uma vida vibrante.",
+    title: "TRAMITES DE SUCESIONES",
+    text: "Asesoramos y gestionamos trámites de sucesiones, asegurando que los derechos de nuestros clientes sean protegidos durante el proceso. Nuestro equipo está aquí para guiarlo a través de los aspectos legales y administrativos relacionados con la sucesión, brindando tranquilidad en momentos difíciles.",
   },
   {
-    title: "SOCORRO IMEDIATO",
-    text: "Estamos disponíveis 24 horas por dia, 7 dias por semana, para lidar com emergências veterinárias. Quando seu pet precisa de cuidados urgentes, nossa equipe dedicada está pronta para fornecer assistência imediata e compassiva.",
+    title: "MEDIACIÓN Y ARBITRAJE",
+    text: "Ofrecemos servicios de mediación y arbitraje para resolver disputas de manera eficiente y efectiva. Nuestro equipo está capacitado para facilitar la comunicación entre las partes y encontrar soluciones justas, evitando así largos procesos judiciales.",
   },
 ];
 
@@ -53,18 +53,18 @@ const ServicesSection = () => {
       >
         <div className="flex w-full flex-col items-center justify-center gap-6 p-5 md:items-start md:justify-start">
           <div className="text-center md:text-start">
-            <span className="text-xl font-light text-powerblue-light">
-              SERVIÇOS
+            <span className="text-xl font-light text-yellow-800">
+              SERVICIOS
             </span>
             <h2 className="text-3xl font-bold xl:text-4xl">
-              Serviços de primeira qualidade para seu pet!
+              Servicios de primera calidad para sus necesidades!
             </h2>
           </div>
 
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, index) => (
               <div
-                className="flex flex-col items-start justify-start rounded-bl-2xl rounded-tr-2xl bg-powerblue-dark p-5 text-white"
+                className="flex flex-col items-start justify-start rounded-bl-2xl rounded-tr-2xl bg-yellow-800 p-5 text-white"
                 key={index}
               >
                 <h4 className="mb-2 font-bold">{service.title}</h4>
