@@ -35,7 +35,7 @@ const ContactSection = () => {
               Contacto
             </span>
             <h2 className="text-3xl font-bold xl:text-5xl">
-              Estudio Juridico Baiud
+              Estudio Juridico Lidia Cristina Baiud
             </h2>
           </div>
 
