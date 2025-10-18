@@ -1,0 +1,42 @@
+# Vercel ignore file
+# Exclude files that don't need to be deployed
+
+# Documentation
+*.md
+!README.md
+
+# Data folder (if exists)
+/data
+
+# Development files
+.vscode
+.idea
+*.log
+
+# PNG originals (we use WebP)
+/public/*.png
+
+# Node modules (Vercel installs its own)
+node_modules
+
+# Build artifacts
+.next
+out
+build
+
+# Environment files
+.env*.local
+
+# Git
+.git
+.gitignore
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Misc
+.DS_Store
+thumbs.db
