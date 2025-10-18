@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { TbTargetArrow } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
 
-import AboutMosaic from "../../public/aboutmosaic.png";
+import AboutMosaic from "../../public/aboutmosaic.webp";
 import { fadeIn } from "../../animation/variants";
 
 const AboutSection = () => {
@@ -30,7 +30,7 @@ const AboutSection = () => {
               Sobre el estudio
             </span>
             <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">
-              Descubrí por qué somos la respuesta legal que necesitás
+              Asesoramiento jurídico profesional en San Salvador de Jujuy
             </h2>
           </div>
           <p className="text-center text-base font-light leading-relaxed text-slate-600 md:text-lg lg:text-left">
@@ -57,7 +57,7 @@ const AboutSection = () => {
         <div className="grid w-full place-items-center bg-gradient-to-br from-slate-100 via-white to-amber-50 p-8 lg:w-1/2">
           <Image
             src={AboutMosaic}
-            alt="Equipo y espacios del Estudio Jurídico Baiud"
+            alt="Estudio Jurídico Baiud - Oficinas y equipo profesional en San Salvador de Jujuy"
             sizes="100vw"
             width={0}
             height={0}

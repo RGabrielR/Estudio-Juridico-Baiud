@@ -6,8 +6,8 @@ import { BsFillPatchCheckFill } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 
 import { fadeIn } from "../../animation/variants";
-import values01 from "../../public/values01.png";
-import values02 from "../../public/values02.png";
+import values01 from "../../public/values01.webp";
+import values02 from "../../public/values02.webp";
 
 const values: { title: string; text: string }[] = [
   {
@@ -40,7 +40,7 @@ const ValuesSection = () => {
         exit="hidden"
         className="relative mx-auto flex w-full flex-col items-center gap-12 overflow-hidden rounded-3xl bg-slate-950 py-16 text-white shadow-2xl"
       >
-        <div className="absolute inset-0 bg-[url('/valuesbg.png')] bg-cover bg-center opacity-20" />
+        <div className="absolute inset-0 bg-[url('/valuesbg.webp')] bg-cover bg-center opacity-20" />
         <div className="relative flex w-full flex-col items-center gap-12 px-6 lg:px-16">
           <h2
             className="flex items-center justify-center gap-4 text-2xl font-semibold uppercase tracking-[0.4em] text-amber-300 md:text-3xl"

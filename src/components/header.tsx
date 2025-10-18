@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Logo from "../../public/logo.png";
+import Logo from "../../public/logo.webp";
 import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import {
@@ -30,6 +30,10 @@ const Header = () => {
     {
       title: "Servicios",
       href: "#Services",
+    },
+    {
+      title: "Artículos",
+      href: "/articulos",
     },
     {
       title: "Contacto",
@@ -85,6 +89,14 @@ const Header = () => {
             href="#Services"
           >
             Servicios
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link
+            className="text-slate-700 transition-colors duration-300 hover:text-slate-950"
+            href="/articulos"
+          >
+            Artículos
           </Link>
         </NavbarItem>
         <NavbarItem>

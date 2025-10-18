@@ -10,7 +10,7 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { TbMapStar } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
 
-import Location from "../../public/location.png";
+import Location from "../../public/location.webp";
 import { fadeIn } from "../../animation/variants";
 
 const ContactMap = dynamic(() => import("@/components/contact/ContactMap"), {

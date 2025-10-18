@@ -14,10 +14,10 @@ const structuredData = {
   "@type": "LegalService",
   name: "Estudio Jurídico Lidia Cristina Baiud",
   description:
-    "Estudio jurídico integral en San Salvador de Jujuy especializado en derecho civil, laboral, comercial, previsional y mediación.",
-  url: "https://estudio-baiud.com.ar/",
-  image: "https://estudio-baiud.com.ar/og-image.jpg",
-  telephone: "+54-388-4881-609",
+    "Estudio Jurídico en San Salvador de Jujuy especializado en Derecho Civil, Familia, Laboral y Penal. Consultas legales con la Dra. Lidia Cristina Baiud. Atención personalizada y experiencia en defensa de sus derechos.",
+  url: "https://www.estudiolcb.com.ar/",
+  image: "https://www.estudiolcb.com.ar/logo.webp",
+  telephone: "+54 388 4881609",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Ramírez de Velazco 672",
@@ -31,53 +31,72 @@ const structuredData = {
     latitude: -24.1841566,
     longitude: -65.2963359,
   },
-  openingHours: "Mo-Fr 09:00-18:00",
+  openingHours: "Mo-Fr 08:00-20:00",
+  priceRange: "$$",
+  areaServed: "Jujuy, Argentina",
   sameAs: ["https://www.facebook.com/profile.php?id=100089098967597"],
 };
 
 export const metadata: Metadata = {
   title: {
-    default: "Estudio Jurídico Baiud | Abogacía integral en Jujuy",
+    default: "Estudio Jurídico Baiud | Abogada en Jujuy – Derecho Civil, Familia y Laboral",
     template: "%s | Estudio Jurídico Baiud",
   },
   description:
-    "Servicio legal integral en San Salvador de Jujuy liderado por la Dra. Lidia Cristina Baiud. Asesoramiento y representación en derecho civil, laboral, comercial, previsional, sucesiones y mediación.",
+    "Estudio Jurídico en San Salvador de Jujuy especializado en Derecho Civil, Familia, Laboral y Penal. Consultas legales con la Dra. Lidia Cristina Baiud. Atención personalizada y experiencia en defensa de sus derechos.",
   keywords: [
-    "estudio jurídico en jujuy",
-    "abogados san salvador de jujuy",
-    "derecho civil",
+    "abogada en Jujuy",
+    "estudio jurídico",
+    "derecho de familia",
     "derecho laboral",
-    "asesoría legal",
+    "divorcios",
+    "sucesiones",
+    "despidos",
+    "San Salvador de Jujuy",
+    "abogados san salvador de jujuy",
+    "derecho civil jujuy",
+    "derecho penal jujuy",
+    "asesoría legal jujuy",
     "mediación y arbitraje",
     "derecho comercial",
     "derecho previsional",
-    "sucesiones",
   ],
   category: "Legal",
   authors: [{ name: "Estudio Jurídico Lidia Cristina Baiud" }],
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   alternates: {
-    canonical: "/",
+    canonical: "https://www.estudiolcb.com.ar/",
   },
   openGraph: {
     type: "website",
-    title: "Estudio Jurídico Baiud | Abogacía integral en Jujuy",
+    title: "Estudio Jurídico Baiud | Abogada en Jujuy – Derecho Civil, Familia y Laboral",
     description:
-      "Equipo legal con más de 20 años de experiencia en derecho civil, laboral, comercial, previsional y mediación en San Salvador de Jujuy.",
+      "Estudio Jurídico en San Salvador de Jujuy especializado en Derecho Civil, Familia, Laboral y Penal. Consultas legales con la Dra. Lidia Cristina Baiud.",
     siteName: "Estudio Jurídico Baiud",
     locale: "es_AR",
+    url: "https://www.estudiolcb.com.ar/",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Estudio Jurídico Baiud | Abogacía integral en Jujuy",
+    title: "Estudio Jurídico Baiud | Abogada en Jujuy",
     description:
-      "Representación legal estratégica y cercana en Jujuy. Consultas presenciales y virtuales.",
+      "Consultas legales con la Dra. Lidia Cristina Baiud. Derecho Civil, Familia, Laboral y Penal en San Salvador de Jujuy.",
   },
   icons: {
     icon: "/favicon.ico",
+  },
+  verification: {
+    google: "google-site-verification-code",
   },
 };
 
@@ -88,6 +107,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es-AR">
+      <head>
+        {/* Google Tag Manager */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXX');
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${montserrat.className} min-h-screen bg-slate-50 text-slate-900 antialiased`}
       >
