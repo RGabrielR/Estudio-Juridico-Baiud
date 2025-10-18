@@ -6,3 +6,29 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+    background-image: radial-gradient(
+        circle at 20% 20%,
+        rgba(251, 191, 36, 0.15),
+        transparent 45%
+      ),
+      radial-gradient(
+        circle at 80% 0%,
+        rgba(30, 64, 175, 0.12),
+        transparent 50%
+      ),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(244, 244, 249, 0.9));
+    background-attachment: fixed;
+  }
+
+  main {
+    @apply flex flex-col gap-24 pb-24;
+  }
+
+  section {
+    @apply px-6 lg:px-10;
+  }
+}

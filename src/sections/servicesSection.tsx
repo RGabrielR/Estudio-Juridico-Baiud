@@ -1,46 +1,45 @@
 "use client";
-import { Button } from "@nextui-org/react";
-import React from "react";
-import { IoCalendarOutline } from "react-icons/io5";
 
+import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../animation/variants";
+import { IoCalendarOutline } from "react-icons/io5";
 import { useInView } from "react-intersection-observer";
+
+import { fadeIn } from "../../animation/variants";
 
 const services: { title: string; text: string }[] = [
   {
-    title: "CONSULTA JURÍDICA - ONLINE O PRESENCIAL",
-    text: "Ofrecemos consultas jurídicas personalizadas, tanto en línea como presenciales, para atender a sus necesidades jurídicas específicas. Nuestro equipo está listo para brindar orientación legal clara y eficaz, garantizando que reciba el apoyo necesario.",
+    title: "Consultas legales presenciales y online",
+    text: "Diagnóstico integral y orientación clara para resolver dudas legales urgentes o planificar estrategias a largo plazo desde cualquier lugar.",
   },
   {
-    title: "REPRESENTACION JURÍDICA - JUICIOS NUEVOS O EN CURSO",
-    text: "Brindamos representación legal integral en juicios nuevos o en curso, asegurando que sus derechos estén protegidos en todo momento. Nuestro equipo de abogados experimentados está comprometido a luchar por sus intereses y alcanzar los mejores resultados posibles.",
+    title: "Representación en litigios",
+    text: "Defensa estratégica en juicios nuevos o en curso, con enfoque en resultados y comunicación permanente sobre cada avance.",
   },
   {
-    title: "TRAMITES ADMINISTRATIVOS, TRIBUTARIOS E INTERNACIONALES",
-    text: "Nos especializamos en la gestión de trámites administrativos, tributarios e internacionales, facilitando el proceso para nuestros clientes. Desde la presentación de documentos hasta la resolución de conflictos, nuestro equipo está aquí para simplificar sus obligaciones legales.",
+    title: "Trámites administrativos y tributarios",
+    text: "Gestión completa frente a organismos públicos y entidades fiscales, optimizando tiempos y reduciendo contingencias.",
   },
   {
-    title: "TRAMITES JUBILATORIOS",
-    text: "Brindamos asesoramiento y gestión en trámites jubilatorios, asegurando que nuestros clientes puedan acceder a sus derechos de manera efectiva. Nuestro equipo está preparado para guiarlo a través de todo el proceso, desde la documentación hasta la obtención de una jubilación adecuada a sus derechos.",
+    title: "Derecho previsional",
+    text: "Acompañamiento en trámites jubilatorios y pensiones para garantizar el acceso efectivo a los beneficios adquiridos.",
   },
   {
-    title: "TRAMITES DE SUCESIONES",
-    text: "Asesoramos y gestionamos trámites de sucesiones, asegurando que los derechos de nuestros clientes sean protegidos durante el proceso. Nuestro equipo está aquí para guiarlo a través de los aspectos legales y administrativos relacionados con la sucesión, brindando tranquilidad en momentos difíciles.",
+    title: "Sucesiones y derecho de familia",
+    text: "Asesoramiento integral para sucesiones, particiones y acuerdos familiares con una mirada empática y ordenada.",
   },
   {
-    title: "MEDIACIÓN Y ARBITRAJE",
-    text: "Ofrecemos servicios de mediación y arbitraje para resolver disputas de manera eficiente y efectiva. Nuestro equipo está capacitado para facilitar la comunicación entre las partes y encontrar soluciones justas, evitando así largos procesos judiciales.",
+    title: "Mediación y arbitraje",
+    text: "Resolución alternativa de conflictos para alcanzar acuerdos eficientes y evitar procesos judiciales prolongados.",
   },
 ];
 
 const ServicesSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
-  const [refQuote, inViewQuote] = useInView({ triggerOnce: false });
 
   return (
     <section
-      className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-5 lg:flex-row lg:py-16 xl:max-w-[1380px]"
+      className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-20 xl:max-w-[1380px]"
       id="Services"
       ref={ref}
     >
@@ -49,44 +48,53 @@ const ServicesSection = () => {
         initial="hidden"
         animate={inView ? "show" : "hidden"}
         exit="hidden"
-        className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-5 lg:flex-row lg:py-16 xl:max-w-[1380px]"
+        className="flex w-full flex-col gap-8 rounded-3xl bg-white/85 p-8 shadow-xl backdrop-blur lg:p-12"
       >
-        <div className="flex w-full flex-col items-center justify-center gap-6 p-5 md:items-start md:justify-start">
-          <div className="text-center md:text-start">
-            <span className="text-xl font-light text-yellow-800">
-              SERVICIOS
-            </span>
-            <h2 className="text-3xl font-bold xl:text-4xl">
-              Servicios de primera calidad para sus necesidades!
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, index) => (
-              <div
-                className="flex flex-col items-start justify-start rounded-bl-2xl rounded-tr-2xl bg-yellow-800 p-5 text-white"
-                key={index}
-              >
-                <h4 className="mb-2 font-bold">{service.title}</h4>
-                <p className="text-sm font-light">{service.text}</p>
-              </div>
-            ))}
-          </div>
-
-          <Button
-            className="h-14 w-full text-base font-medium text-white"
-            color="primary"
-            endContent={<IoCalendarOutline size={30} className="ml-2" />}
-            onClick={() => {
-              window.open(
-                "https://api.whatsapp.com/send/?phone=%2B543884881609&text&type=phone_number&app_absent=0",
-                "_blank",
-              );
-            }}
-          >
-            Agendar Consulta
-          </Button>
+        <div className="flex flex-col gap-4 text-center lg:text-left">
+          <span className="text-xs font-semibold uppercase tracking-[0.45em] text-amber-500">
+            Servicios
+          </span>
+          <h2 className="text-3xl font-black text-slate-950 sm:text-4xl">
+            Soluciones legales de alto impacto para cada necesidad
+          </h2>
+          <p className="text-base font-light leading-relaxed text-slate-600 md:text-lg">
+            Trabajamos con equipos multidisciplinarios para ofrecer respuestas
+            ágiles y confiables en derecho civil, laboral, comercial y penal.
+            Cada intervención se apoya en procesos claros y reporting continuo.
+          </p>
         </div>
+
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {services.map((service) => (
+            <article
+              className="group flex h-full flex-col gap-3 rounded-3xl border border-slate-200 bg-white p-6 text-left shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              key={service.title}
+            >
+              <h3 className="text-lg font-semibold text-slate-900">
+                {service.title}
+              </h3>
+              <p className="text-sm font-light leading-relaxed text-slate-600">
+                {service.text}
+              </p>
+            </article>
+          ))}
+        </div>
+
+        <Button
+          className="h-14 w-full max-w-sm self-center rounded-full border border-amber-400/60 bg-amber-400/90 text-base font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-300"
+          color="warning"
+          endContent={
+            <IoCalendarOutline size={30} className="ml-2 text-slate-950" />
+          }
+          onClick={() => {
+            window.open(
+              "https://api.whatsapp.com/send/?phone=%2B543884881609&text&type=phone_number&app_absent=0",
+              "_blank",
+            );
+          }}
+        >
+          Reservar una consulta
+        </Button>
       </motion.div>
     </section>
   );

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Logo from "../../public/logo.png";
-import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import {
   Navbar,
@@ -38,7 +38,11 @@ const Header = () => {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-yellow-800 py-2">
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      className="sticky top-0 z-50 bg-white/80 py-2 shadow-sm backdrop-blur-md"
+      maxWidth="full"
+    >
       <NavbarContent justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -61,7 +65,7 @@ const Header = () => {
       <NavbarContent className="hidden gap-4 md:flex" justify="center">
         <NavbarItem>
           <Link
-            className="text-white transition-all duration-300 hover:font-bold"
+            className="text-slate-700 transition-colors duration-300 hover:text-slate-950"
             href="#About"
           >
             Sobre
@@ -69,7 +73,7 @@ const Header = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-white transition-all duration-300 hover:font-bold"
+            className="text-slate-700 transition-colors duration-300 hover:text-slate-950"
             href="#Values"
           >
             Valores
@@ -77,7 +81,7 @@ const Header = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-white transition-all duration-300 hover:font-bold"
+            className="text-slate-700 transition-colors duration-300 hover:text-slate-950"
             href="#Services"
           >
             Servicios
@@ -85,7 +89,7 @@ const Header = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-white transition-all duration-300 hover:font-bold"
+            className="text-slate-700 transition-colors duration-300 hover:text-slate-950"
             href="#Contact"
           >
             Contacto
@@ -97,15 +101,15 @@ const Header = () => {
           <NavbarItem>
             <Button
               as={Link}
-              color="primary"
+              color="warning"
               href="https://www.facebook.com/profile.php?id=100089098967597"
-              variant="flat"
+              variant="light"
               isIconOnly
               target="_blank"
               startContent={
                 <FaFacebookF
                   size={40}
-                  className="rounded-full border-2 p-2 text-white"
+                  className="rounded-full border border-amber-400/60 bg-amber-400/30 p-2 text-slate-900 transition hover:bg-amber-400/60"
                 />
               }
             />
@@ -131,22 +135,22 @@ const Header = () => {
           <NavbarItem>
             <Button
               as={Link}
-              color="primary"
+              color="warning"
               href="https://api.whatsapp.com/send/?phone=%2B543884881609&text&type=phone_number&app_absent=0"
-              variant="flat"
+              variant="light"
               isIconOnly
               target="_blank"
               startContent={
                 <FaWhatsapp
                   size={40}
-                  className="rounded-full border-2 p-2 text-white"
+                  className="rounded-full border border-amber-400/60 bg-amber-400/30 p-2 text-slate-900 transition hover:bg-amber-400/60"
                 />
               }
             />
           </NavbarItem>
         </div>
       </NavbarContent>
-      <NavbarMenu className="pt-10">
+      <NavbarMenu className="bg-white/95 pt-10 backdrop-blur-md">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={index}>
             <Link className="w-full" href={item.href} size="lg">

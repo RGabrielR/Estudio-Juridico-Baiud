@@ -1,21 +1,19 @@
 "use client";
+
 import Image from "next/image";
-import React from "react";
+import { motion } from "framer-motion";
+import { TbTargetArrow } from "react-icons/tb";
+import { useInView } from "react-intersection-observer";
 
 import AboutMosaic from "../../public/aboutmosaic.png";
-import { TbTargetArrow } from "react-icons/tb";
-
-import { motion } from "framer-motion";
 import { fadeIn } from "../../animation/variants";
-import { useInView } from "react-intersection-observer";
 
 const AboutSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
-  const [refQuote, inViewQuote] = useInView({ triggerOnce: false });
 
   return (
     <section
-      className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-5 lg:flex-row lg:py-16 xl:max-w-[1380px]"
+      className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-20 xl:max-w-[1380px]"
       id="About"
       ref={ref}
     >
@@ -24,47 +22,48 @@ const AboutSection = () => {
         initial="hidden"
         animate={inView ? "show" : "hidden"}
         exit="hidden"
-        className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center py-5 lg:flex-row lg:py-16 xl:max-w-[1380px]"
+        className="flex w-full flex-col overflow-hidden rounded-3xl bg-white/85 shadow-xl backdrop-blur lg:flex-row"
       >
-        <div className="flex w-full min-w-[50%] flex-col items-center justify-center gap-6 p-5">
-          <div className="text-center">
-            <span className="text-xl font-light text-yellow-800">SOBRE</span>
-            <h2 className="text-3xl font-bold xl:text-4xl">
-              Descubra porque damos la solución que necesita
+        <div className="flex w-full min-w-[50%] flex-col gap-8 p-8 lg:p-12">
+          <div className="text-center lg:text-left">
+            <span className="text-xs font-semibold uppercase tracking-[0.45em] text-amber-500">
+              Sobre el estudio
+            </span>
+            <h2 className="mt-3 text-3xl font-black text-slate-950 sm:text-4xl">
+              Descubrí por qué somos la respuesta legal que necesitás
             </h2>
           </div>
-          <p className="text-center text-sm font-light md:text-base xl:text-lg">
-            Con años de experiencia en el sistema legal, puedo brindar
-            asesoramiento y representación legal de alta calidad. Mi compromiso
-            es entender las necesidades de mis clientes y proporcionar
-            soluciones efectivas y personalizadas. Con una solida reputacion en
-            el sector, estoy aqui para proteger tus derechos y alcanzar los
-            mejores resultados posibles.
+          <p className="text-center text-base font-light leading-relaxed text-slate-600 md:text-lg lg:text-left">
+            Con mucha dedicación al ejercicio profesional, acompañamos a
+            personas, familias y empresas en decisiones clave. Abordamos cada
+            caso con estrategias personalizadas, comunicación transparente y un
+            compromiso auténtico por proteger tus intereses.
           </p>
 
-          <div className="flex flex-col items-center justify-center rounded-2xl bg-yellow-800 p-5 text-center xl:p-8">
-            <span className="flex items-center justify-center gap-4 text-2xl font-bold text-yellow-200 xl:text-4xl">
-              <TbTargetArrow size={50} /> NUESTRA MISIÓN
+          <div className="rounded-3xl bg-slate-950 p-6 text-left text-white shadow-lg">
+            <span className="flex items-center gap-4 text-xl font-semibold uppercase tracking-wide text-amber-300 sm:text-2xl">
+              <TbTargetArrow size={42} /> Nuestra misión
             </span>
-            <p className="mt-5 text-sm font-extralight text-white md:text-base">
-              En nuestro estudio jurídico, nuestra misión es promover la
-              justicia y el bienestar de nuestros clientes, ofreciendo servicios
-              legales de alta calidad. Creemos que cada persona merece una
-              representación legal efectiva y compasiva. Estamos comprometidos a
-              brindar atención de élite.
+            <p className="mt-4 text-sm font-light leading-relaxed text-slate-100 md:text-base">
+              Promovemos la justicia y el bienestar de nuestros clientes a
+              través de soluciones legales claras, efectivas y humanas. Creemos
+              que cada persona merece una defensa comprometida y cercana, por
+              eso trabajamos con integridad, preparación constante y una visión
+              estratégica de largo plazo.
             </p>
           </div>
         </div>
 
-        <Image
-          ref={refQuote}
-          src={AboutMosaic}
-          alt="Mosaico de imágenes de Estudio Jurídico"
-          sizes="100vw"
-          width={0}
-          height={0}
-          className="aspect-square h-auto w-full min-w-[50%] p-5"
-        />
+        <div className="grid w-full place-items-center bg-gradient-to-br from-slate-100 via-white to-amber-50 p-8 lg:w-1/2">
+          <Image
+            src={AboutMosaic}
+            alt="Equipo y espacios del Estudio Jurídico Baiud"
+            sizes="100vw"
+            width={0}
+            height={0}
+            className="h-auto w-full max-w-xl rounded-3xl object-cover shadow-lg"
+          />
+        </div>
       </motion.div>
     </section>
   );
