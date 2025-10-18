@@ -38,6 +38,7 @@ const structuredData = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.estudiolcb.com.ar'),
   title: {
     default: "Estudio Jurídico Baiud | Abogada en Jujuy – Derecho Civil, Familia y Laboral",
     template: "%s | Estudio Jurídico Baiud",
