@@ -196,7 +196,7 @@ export default function DivorcionEnJujuyPage() {
         </h2>
 
         <p>
-          Con más de 20 años de experiencia en derecho de familia en Jujuy, la
+         Con gran dedicación al ejercicio del derecho de familia en Jujuy, la
           Dra. Lidia Cristina Baiud brinda asesoramiento integral y
           personalizado durante todo el proceso de divorcio. Trabajamos con
           empatía, profesionalismo y estrategia para proteger tus derechos y los

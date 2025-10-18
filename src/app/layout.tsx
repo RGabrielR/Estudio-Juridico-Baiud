@@ -109,7 +109,7 @@ export default function RootLayout({
   return (
     <html lang="es-AR">
       <head>
-        {/* Google Tag Manager */}
+        {/* Google Analytics */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-1CK50HM2ZS"
@@ -121,6 +121,22 @@ export default function RootLayout({
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-1CK50HM2ZS');
+            `,
+          }}
+        />
+
+        {/* Google Ads Conversion Tracking */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17663647340"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17663647340');
             `,
           }}
         />
