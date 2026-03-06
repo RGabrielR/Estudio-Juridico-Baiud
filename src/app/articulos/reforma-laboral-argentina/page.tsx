@@ -80,7 +80,7 @@ export default function ReformaLaboralArgentinaPage() {
           La Ley 27.802 toca aspectos centrales de la relación entre empleados y
           empleadores: cómo se calculan las indemnizaciones cuando te echan, cómo
           se organizan los horarios, cómo se toman las vacaciones y qué pasa si
-          trabajaste "en negro". Son cambios que te afectan directamente,
+          trabajaste &ldquo;en negro&rdquo;. Son cambios que te afectan directamente,
           independientemente de en qué sector trabajés.
         </p>
 
@@ -97,7 +97,7 @@ export default function ReformaLaboralArgentinaPage() {
         </p>
         <p>
           Hasta ahora, para calcular la indemnización cuando te despedían, se
-          tomaba en cuenta tu "mejor remuneración" del último año, que podía
+          tomaba en cuenta tu &ldquo;mejor remuneración&rdquo; del último año, que podía
           incluir el aguinaldo, bonos y otros conceptos. Con la nueva ley, la
           base de cálculo queda limitada a lo que se llama{" "}
           <strong>remuneración mensual normal y habitual</strong>, que es básicamente
@@ -170,7 +170,7 @@ export default function ReformaLaboralArgentinaPage() {
         <p>
           La ley introduce el <strong>banco de horas</strong>: un sistema por el
           cual las horas extras trabajadas no se pagan inmediatamente como
-          adicional, sino que se "acumulan" y el trabajador puede compensarlas
+          adicional, sino que se &ldquo;acumulan&rdquo; y el trabajador puede compensarlas
           después tomando tiempo libre equivalente.
         </p>
         <p>
