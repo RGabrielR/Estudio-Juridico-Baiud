@@ -33,6 +33,13 @@ const articulos = [
       "Conocé tus derechos ante un despido sin causa justificada. Indemnizaciones, plazos y cómo reclamar lo que te corresponde legalmente.",
     categoria: "Derecho Laboral",
   },
+  {
+    slug: "reforma-laboral-argentina",
+    title: "Nueva Ley 27.802: Modernización Laboral Argentina 2026",
+    description:
+      "Todo sobre la Ley 27.802 de Modernización Laboral 2026: nuevo cálculo de indemnizaciones, banco de horas, FAL y blanqueo laboral explicados en simple.",
+    categoria: "Derecho Laboral",
+  },
 ];
 
 export default function ArticulosPage() {
