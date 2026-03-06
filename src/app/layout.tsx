@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import Script from "next/script";
 
 import Footer from "@/components/footer";
 import Header from "@/components/header";
@@ -108,39 +109,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es-AR">
-      <head>
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-1CK50HM2ZS"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-1CK50HM2ZS');
-            `,
-          }}
-        />
-
-        {/* Google Ads Conversion Tracking */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17663647340"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17663647340');
-            `,
-          }}
-        />
-      </head>
       <body
         className={`${montserrat.className} min-h-screen bg-slate-50 text-slate-900 antialiased`}
       >
@@ -154,6 +122,28 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </body>
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-1CK50HM2ZS"
+        strategy="afterInteractive"
+      />
+      <Script id="ga-init" strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-1CK50HM2ZS');
+      `}</Script>
+      {/* Google Ads Conversion Tracking */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17663647340"
+        strategy="afterInteractive"
+      />
+      <Script id="gads-init" strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17663647340');
+      `}</Script>
     </html>
   );
 }
