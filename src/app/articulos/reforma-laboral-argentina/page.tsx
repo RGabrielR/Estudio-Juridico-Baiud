@@ -1,61 +1,61 @@
-import type { Metadata } from &ldquo;next&rdquo;;
-import Link from &ldquo;next/link&rdquo;;
+import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title:
-    &ldquo;Nueva Ley Laboral 27.802: Qué Cambia y Cómo Te Afecta en Argentina 2026&rdquo;,
+    "Nueva Ley Laboral 27.802: Qué Cambia y Cómo Te Afecta en Argentina 2026",
   description:
-    &ldquo;Explicación clara de la nueva Ley 27.802 de Modernización Laboral (2026). Cambios en indemnizaciones, banco de horas, FAL y empleo registrado. Consultá con la Dra. Baiud en Jujuy.&rdquo;,
+    "Explicación clara de la nueva Ley 27.802 de Modernización Laboral (2026). Cambios en indemnizaciones, banco de horas, FAL y empleo registrado. Consultá con la Dra. Baiud en Jujuy.",
   keywords: [
-    &ldquo;ley 27802 modernizacion laboral&rdquo;,
-    &ldquo;nueva ley laboral argentina 2026&rdquo;,
-    &ldquo;reforma laboral 2026 argentina&rdquo;,
-    &ldquo;ley modernizacion laboral trabajadores&rdquo;,
-    &ldquo;fondo asistencia laboral FAL&rdquo;,
-    &ldquo;banco de horas argentina 2026&rdquo;,
-    &ldquo;indemnizacion nueva ley laboral&rdquo;,
-    &ldquo;empleo registrado blanqueo laboral&rdquo;,
-    &ldquo;reforma laboral jujuy 2026&rdquo;,
-    &ldquo;abogada laboral jujuy&rdquo;,
-    &ldquo;cambios laborales argentina 2026&rdquo;,
-    &ldquo;derechos trabajadores ley 27802&rdquo;,
-    &ldquo;empleadores nueva ley trabajo&rdquo;,
-    &ldquo;vacaciones fraccionadas ley 27802&rdquo;,
+    "ley 27802 modernizacion laboral",
+    "nueva ley laboral argentina 2026",
+    "reforma laboral 2026 argentina",
+    "ley modernizacion laboral trabajadores",
+    "fondo asistencia laboral FAL",
+    "banco de horas argentina 2026",
+    "indemnizacion nueva ley laboral",
+    "empleo registrado blanqueo laboral",
+    "reforma laboral jujuy 2026",
+    "abogada laboral jujuy",
+    "cambios laborales argentina 2026",
+    "derechos trabajadores ley 27802",
+    "empleadores nueva ley trabajo",
+    "vacaciones fraccionadas ley 27802",
   ],
   alternates: {
     canonical:
-      &ldquo;https://www.estudiolcb.com.ar/articulos/reforma-laboral-argentina&rdquo;,
+      "https://www.estudiolcb.com.ar/articulos/reforma-laboral-argentina",
   },
   openGraph: {
-    title: &ldquo;Nueva Ley 27.802: La Reforma Laboral 2026 Explicada en Simple&rdquo;,
+    title: "Nueva Ley 27.802: La Reforma Laboral 2026 Explicada en Simple",
     description:
-      &ldquo;Todo lo que trabajadores y empleadores en Jujuy necesitan saber sobre la nueva Ley de Modernización Laboral 27.802.&rdquo;,
-    type: &ldquo;article&rdquo;,
+      "Todo lo que trabajadores y empleadores en Jujuy necesitan saber sobre la nueva Ley de Modernización Laboral 27.802.",
+    type: "article",
   },
 };
 
 export default function ReformaLaboralArgentinaPage() {
   return (
-    <main className=&rdquo;mx-auto min-h-screen w-full max-w-4xl px-6 py-20&rdquo;>
-      <article className=&rdquo;prose prose-slate max-w-none&rdquo;>
-        <div className=&rdquo;mb-8&rdquo;>
+    <main className="mx-auto min-h-screen w-full max-w-4xl px-6 py-20">
+      <article className="prose prose-slate max-w-none">
+        <div className="mb-8">
           <Link
-            href=&rdquo;/articulos&rdquo;
-            className=&rdquo;text-sm font-semibold text-amber-600 no-underline hover:text-amber-700&rdquo;
+            href="/articulos"
+            className="text-sm font-semibold text-amber-600 no-underline hover:text-amber-700"
           >
             ← Volver a artículos
           </Link>
         </div>
 
-        <span className=&rdquo;text-xs font-semibold uppercase tracking-wider text-amber-600&rdquo;>
+        <span className="text-xs font-semibold uppercase tracking-wider text-amber-600">
           Derecho Laboral
         </span>
 
-        <h1 className=&rdquo;mt-4 text-4xl font-black leading-tight text-slate-950 md:text-5xl&rdquo;>
+        <h1 className="mt-4 text-4xl font-black leading-tight text-slate-950 md:text-5xl">
           Nueva Ley Laboral 27.802: Qué Cambia y Cómo Te Afecta en el Trabajo
         </h1>
 
-        <p className=&rdquo;lead text-xl font-light leading-relaxed text-slate-600&rdquo;>
+        <p className="lead text-xl font-light leading-relaxed text-slate-600">
           El 27 de febrero de 2026 se sancionó la Ley 27.802 de Modernización
           Laboral, una de las reformas más importantes al derecho del trabajo en
           Argentina en los últimos años. Acá te explicamos sin tecnicismos qué
@@ -63,8 +63,8 @@ export default function ReformaLaboralArgentinaPage() {
           empleador, y cómo podés proteger tus derechos.
         </p>
 
-        <div className=&rdquo;not-prose mt-8 rounded-2xl border border-amber-200 bg-amber-50 px-6 py-4&rdquo;>
-          <p className=&rdquo;text-sm font-semibold text-amber-800&rdquo;>
+        <div className="not-prose mt-8 rounded-2xl border border-amber-200 bg-amber-50 px-6 py-4">
+          <p className="text-sm font-semibold text-amber-800">
             Esta ley entra en vigencia desde su publicación en el Boletín
             Oficial y aplica tanto a nuevas relaciones laborales como a procesos
             en curso. Si tenés dudas sobre cómo te afecta en particular, consultá
@@ -72,7 +72,7 @@ export default function ReformaLaboralArgentinaPage() {
           </p>
         </div>
 
-        <h2 className=&rdquo;mt-12 text-3xl font-bold text-slate-950&rdquo;>
+        <h2 className="mt-12 text-3xl font-bold text-slate-950">
           ¿Por qué esta reforma importa?
         </h2>
 
@@ -84,11 +84,11 @@ export default function ReformaLaboralArgentinaPage() {
           independientemente de en qué sector trabajés.
         </p>
 
-        <h2 className=&rdquo;mt-12 text-3xl font-bold text-slate-950&rdquo;>
+        <h2 className="mt-12 text-3xl font-bold text-slate-950">
           Los 5 cambios más importantes de la Ley 27.802
         </h2>
 
-        <h3 className=&rdquo;text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="text-2xl font-semibold text-slate-900">
           1. Cambia cómo se calcula la indemnización por despido
         </h3>
         <p>
@@ -129,7 +129,7 @@ export default function ReformaLaboralArgentinaPage() {
           menores en contextos de alta inflación.
         </p>
 
-        <h3 className=&rdquo;mt-8 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-8 text-2xl font-semibold text-slate-900">
           2. Se crea el Fondo de Asistencia Laboral (FAL)
         </h3>
         <p>
@@ -148,7 +148,8 @@ export default function ReformaLaboralArgentinaPage() {
           </li>
         </ul>
         <p>
-          Estos aportes son <strong>compensables con descuentos en cargas sociales</strong>,
+          Estos aportes son{" "}
+          <strong>compensables con descuentos en cargas sociales</strong>,
           es decir, que no necesariamente representan un costo adicional neto para
           el empleador si se computa correctamente.
         </p>
@@ -164,7 +165,7 @@ export default function ReformaLaboralArgentinaPage() {
           incumplimientos.
         </p>
 
-        <h3 className=&rdquo;mt-8 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-8 text-2xl font-semibold text-slate-900">
           3. Banco de horas y mayor flexibilidad en los horarios
         </h3>
         <p>
@@ -174,7 +175,8 @@ export default function ReformaLaboralArgentinaPage() {
           después tomando tiempo libre equivalente.
         </p>
         <p>
-          Para que esto sea válido, <strong>debe acordarse por escrito</strong>{" "}
+          Para que esto sea válido,{" "}
+          <strong>debe acordarse por escrito</strong>{" "}
           entre el empleador y el empleado (o mediante convenio colectivo). No
           alcanza con un acuerdo verbal.
         </p>
@@ -192,7 +194,7 @@ export default function ReformaLaboralArgentinaPage() {
           atención para no afectar derechos adquiridos.
         </p>
 
-        <h3 className=&rdquo;mt-8 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-8 text-2xl font-semibold text-slate-900">
           4. Vacaciones fraccionadas y derecho a verano
         </h3>
         <p>
@@ -201,10 +203,10 @@ export default function ReformaLaboralArgentinaPage() {
           regla general era tomarlas de corrido (salvo excepciones).
         </p>
         <p>
-          Además, se establece el <strong>derecho a período estival cada 3
-          años</strong>: el trabajador tiene garantizado que, como mínimo una vez
-          cada tres años, sus vacaciones van a caer en la temporada de verano
-          (diciembre-marzo).
+          Además, se establece el{" "}
+          <strong>derecho a período estival cada 3 años</strong>: el trabajador
+          tiene garantizado que, como mínimo una vez cada tres años, sus
+          vacaciones van a caer en la temporada de verano (diciembre-marzo).
         </p>
         <p>
           <strong>Para el trabajador</strong>, esto puede ser una ventaja si
@@ -214,7 +216,7 @@ export default function ReformaLaboralArgentinaPage() {
           derechos para negociar bien.
         </p>
 
-        <h3 className=&rdquo;mt-8 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-8 text-2xl font-semibold text-slate-900">
           5. Blanqueo laboral: oportunidad para regularizar empleo informal
         </h3>
         <p>
@@ -248,26 +250,27 @@ export default function ReformaLaboralArgentinaPage() {
           laboral con indemnizaciones agravadas.
         </p>
 
-        <h2 className=&rdquo;mt-12 text-3xl font-bold text-slate-950&rdquo;>
+        <h2 className="mt-12 text-3xl font-bold text-slate-950">
           Servicios esenciales: más restricciones a las huelgas
         </h2>
 
         <p>
-          La ley amplía la lista de sectores considerados &ldquo;servicios esenciales&rdquo;:
-          ahora incluye transporte, salud y energía, entre otros. En estos
-          sectores, durante una huelga o medida de fuerza, debe mantenerse una
-          prestación mínima del <strong>50% del servicio</strong>.
+          La ley amplía la lista de sectores considerados{" "}
+          &ldquo;servicios esenciales&rdquo;: ahora incluye transporte, salud y energía,
+          entre otros. En estos sectores, durante una huelga o medida de fuerza,
+          debe mantenerse una prestación mínima del{" "}
+          <strong>50% del servicio</strong>.
         </p>
         <p>
           Esto puede afectar la dinámica sindical en estos sectores y es un
           punto que los representantes gremiales están analizando con atención.
         </p>
 
-        <h2 className=&rdquo;mt-12 text-3xl font-bold text-slate-950&rdquo;>
+        <h2 className="mt-12 text-3xl font-bold text-slate-950">
           Preguntas frecuentes sobre la Ley 27.802
         </h2>
 
-        <h3 className=&rdquo;text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="text-2xl font-semibold text-slate-900">
           ¿Esta ley se aplica a contratos que ya existen o solo a los nuevos?
         </h3>
         <p>
@@ -277,7 +280,7 @@ export default function ReformaLaboralArgentinaPage() {
           en más. El impacto concreto depende de qué artículo aplique a tu caso.
         </p>
 
-        <h3 className=&rdquo;mt-6 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-6 text-2xl font-semibold text-slate-900">
           ¿Puedo negarme al banco de horas?
         </h3>
         <p>
@@ -287,7 +290,7 @@ export default function ReformaLaboralArgentinaPage() {
           asegurarte de que sean equitativos.
         </p>
 
-        <h3 className=&rdquo;mt-6 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-6 text-2xl font-semibold text-slate-900">
           ¿Si me despiden ahora, se aplica el nuevo cálculo de indemnización?
         </h3>
         <p>
@@ -297,7 +300,7 @@ export default function ReformaLaboralArgentinaPage() {
           en la liquidación.
         </p>
 
-        <h3 className=&rdquo;mt-6 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-6 text-2xl font-semibold text-slate-900">
           ¿El blanqueo laboral tiene fecha límite?
         </h3>
         <p>
@@ -307,7 +310,7 @@ export default function ReformaLaboralArgentinaPage() {
           tu situación laboral no está bien registrada, no esperes.
         </p>
 
-        <h3 className=&rdquo;mt-6 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-6 text-2xl font-semibold text-slate-900">
           ¿Esta ley aplica igual en Jujuy?
         </h3>
         <p>
@@ -317,17 +320,16 @@ export default function ReformaLaboralArgentinaPage() {
           superiores a las de la ley general.
         </p>
 
-        <h2 className=&rdquo;mt-12 text-3xl font-bold text-slate-950&rdquo;>
+        <h2 className="mt-12 text-3xl font-bold text-slate-950">
           ¿Cómo puede ayudarte la Dra. Baiud con esta reforma?
         </h2>
 
         <p>
-          La Dra. Lidia Cristina Baiud, abogada con amplia
-          experiencia en Jujuy, puede asesorarte en las situaciones concretas que
-          genera esta nueva ley:
+          La Dra. Lidia Cristina Baiud, abogada con amplia experiencia en Jujuy,
+          puede asesorarte en las situaciones concretas que genera esta nueva ley:
         </p>
 
-        <h3 className=&rdquo;text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="text-2xl font-semibold text-slate-900">
           Para trabajadores:
         </h3>
         <ul>
@@ -354,7 +356,7 @@ export default function ReformaLaboralArgentinaPage() {
           </li>
         </ul>
 
-        <h3 className=&rdquo;mt-6 text-2xl font-semibold text-slate-900&rdquo;>
+        <h3 className="mt-6 text-2xl font-semibold text-slate-900">
           Para empleadores:
         </h3>
         <ul>
@@ -380,29 +382,29 @@ export default function ReformaLaboralArgentinaPage() {
           </li>
         </ul>
 
-        <div className=&rdquo;mt-16 rounded-3xl bg-slate-950 p-8 not-prose text-white&rdquo;>
-          <h3 className=&rdquo;text-2xl font-bold&rdquo;>
+        <div className="mt-16 rounded-3xl bg-slate-950 p-8 not-prose text-white">
+          <h3 className="text-2xl font-bold">
             ¿La nueva ley te genera dudas sobre tu trabajo o tu empresa?
           </h3>
-          <p className=&rdquo;mt-4 text-base font-light text-slate-200&rdquo;>
+          <p className="mt-4 text-base font-light text-slate-200">
             No esperes a que el problema sea más grande. La Dra. Lidia Baiud te
             explica exactamente cómo te afecta la Ley 27.802 en tu caso
             particular: sin tecnicismos y con soluciones concretas. Una
             consulta a tiempo puede ahorrarte muchos problemas — y mucho dinero.
           </p>
           <Link
-            href=&rdquo;/#Contact&rdquo;
-            className=&rdquo;mt-6 inline-block rounded-full border border-amber-400/60 bg-amber-400/90 px-8 py-4 text-base font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-300&rdquo;
+            href="/#Contact"
+            className="mt-6 inline-block rounded-full border border-amber-400/60 bg-amber-400/90 px-8 py-4 text-base font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-300"
           >
             Consultar ahora
           </Link>
         </div>
 
-        <div className=&rdquo;mt-8 rounded-3xl bg-amber-50 p-8 not-prose&rdquo;>
-          <h3 className=&rdquo;text-2xl font-bold text-slate-950&rdquo;>
+        <div className="mt-8 rounded-3xl bg-amber-50 p-8 not-prose">
+          <h3 className="text-2xl font-bold text-slate-950">
             ¿Sos empleador con personal en negro? Esta es tu oportunidad.
           </h3>
-          <p className=&rdquo;mt-4 text-base font-light text-slate-700&rdquo;>
+          <p className="mt-4 text-base font-light text-slate-700">
             La Ley 27.802 abre una ventana para regularizar relaciones laborales
             informales con condonación de multas y planes de pago de hasta 72
             cuotas. El Estudio Baiud te guía en el proceso para que aproveches
@@ -410,8 +412,8 @@ export default function ReformaLaboralArgentinaPage() {
             que después te cuesten más caro.
           </p>
           <Link
-            href=&rdquo;/#Contact&rdquo;
-            className=&rdquo;mt-6 inline-block rounded-full border border-amber-400/60 bg-amber-400/90 px-8 py-4 text-base font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-300&rdquo;
+            href="/#Contact"
+            className="mt-6 inline-block rounded-full border border-amber-400/60 bg-amber-400/90 px-8 py-4 text-base font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-amber-300"
           >
             Regularizar mi situación laboral
           </Link>
