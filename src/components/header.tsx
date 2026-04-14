@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import {
   Button,
   Link,
@@ -21,15 +22,18 @@ import { useLanguage } from "@/providers/LanguageProvider";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
   const { language } = useLanguage();
   const copy = siteCopy[language];
+  const getSectionHref = (sectionId: `#${string}`) =>
+    pathname === "/" ? sectionId : `/${sectionId}`;
 
   const menuItems: { title: string; href: string }[] = [
-    { title: copy.header.menu.about, href: "#About" },
-    { title: copy.header.menu.values, href: "#Values" },
-    { title: copy.header.menu.services, href: "#Services" },
+    { title: copy.header.menu.about, href: getSectionHref("#About") },
+    { title: copy.header.menu.values, href: getSectionHref("#Values") },
+    { title: copy.header.menu.services, href: getSectionHref("#Services") },
     { title: copy.header.menu.articles, href: "/articles" },
-    { title: copy.header.menu.contact, href: "#Contact" },
+    { title: copy.header.menu.contact, href: getSectionHref("#Contact") },
   ];
 
   return (
