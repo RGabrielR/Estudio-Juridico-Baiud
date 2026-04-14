@@ -8,9 +8,13 @@ import { useInView } from "react-intersection-observer";
 
 import { fadeIn } from "../../animation/variants";
 import heroBanner from "../../public/herobanner.png";
+import { siteCopy } from "@/i18n/siteCopy";
+import { useLanguage } from "@/providers/LanguageProvider";
 
 const HeroSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
+  const { language } = useLanguage();
+  const copy = siteCopy[language].hero;
 
   return (
     <section
@@ -29,7 +33,7 @@ const HeroSection = () => {
           <div className="absolute inset-0 opacity-30">
             <Image
               src={heroBanner}
-              alt="Estudio jurídico Dr. Miguel Alabi en Tucumán"
+              alt={copy.backgroundAlt}
               fill
               priority
               sizes="100vw"
@@ -40,22 +44,19 @@ const HeroSection = () => {
 
           <div className="neo-panel relative flex w-full flex-col items-center justify-center gap-8 p-10 text-center lg:w-7/12 lg:text-left">
             <span className="text-xs font-semibold uppercase tracking-[0.45em] text-zinc-400">
-              Abogado en Tucumán
+              {copy.eyebrow}
             </span>
             <h1 className="text-4xl font-black leading-tight text-zinc-100 md:text-6xl">
-              Dr. Miguel Alabi, abogado para personas y empresas
+              {copy.title}
             </h1>
             <h2 className="text-2xl font-semibold leading-tight text-zinc-300 md:text-3xl">
-              Derecho laboral, civil, de familia y penal en San Miguel de
-              Tucumán
+              {copy.subtitle}
             </h2>
             <h3 className="text-lg font-light text-zinc-300 md:text-xl">
-              Consultas presenciales y online para clientes en Tucumán,
-              Argentina y el exterior
+              {copy.lead}
             </h3>
             <p className="text-base font-light text-zinc-300 md:text-lg">
-              Asesoramiento jurídico claro, seguimiento cercano y estrategia
-              práctica para cada etapa de tu caso.
+              {copy.description}
             </p>
             <Button
               className="neo-button h-14 w-full max-w-sm text-base lg:justify-start"
@@ -69,7 +70,7 @@ const HeroSection = () => {
                 );
               }}
             >
-              Agendar consulta por WhatsApp
+              {copy.cta}
             </Button>
           </div>
 
@@ -77,7 +78,7 @@ const HeroSection = () => {
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-zinc-950/50">
               <Image
                 src={heroBanner}
-                alt="Dr. Miguel Alabi, abogado en Tucumán"
+                alt={copy.portraitAlt}
                 fill
                 sizes="(max-width: 1023px) 100vw, 340px"
                 className="object-cover object-center"
@@ -90,7 +91,7 @@ const HeroSection = () => {
             <div className="relative aspect-[2/3] w-full max-w-[340px] overflow-hidden rounded-3xl bg-zinc-950/50">
               <Image
                 src={heroBanner}
-                alt="Dr. Miguel Alabi, abogado en Tucumán"
+                alt={copy.portraitAlt}
                 fill
                 sizes="(min-width: 1280px) 340px, (min-width: 1024px) 28vw, 100vw"
                 className="object-cover object-center"

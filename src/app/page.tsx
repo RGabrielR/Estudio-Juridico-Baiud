@@ -7,16 +7,16 @@ import ServicesSection from "@/sections/servicesSection";
 import ValuesSection from "@/sections/valuesSection";
 
 export const metadata: Metadata = {
-  title: "Abogado en Tucumán para derecho laboral, civil y de familia",
+  title: "Lawyer in Tucuman for labor, civil and family law",
   description:
-    "Consultá con Dr. Miguel Alabi, abogado en Tucumán. Asesoramiento en derecho laboral, civil, familia y penal con atención presencial y online.",
+    "Consult Dr. Miguel Alabi, a lawyer in Tucuman, for labor, civil, family and criminal law matters with in-person and remote service.",
   keywords: [
-    "abogado en Tucumán",
-    "abogado laboral Tucumán",
-    "abogado civil Tucumán",
-    "abogado de familia Tucumán",
-    "consulta legal Tucumán",
-    "abogado online Argentina",
+    "lawyer in Tucuman",
+    "labor lawyer Tucuman",
+    "civil lawyer Tucuman",
+    "family lawyer Tucuman",
+    "legal consultation Tucuman",
+    "online lawyer Argentina",
   ],
   alternates: {
     canonical: "https://www.estudiolcb.com.ar/",

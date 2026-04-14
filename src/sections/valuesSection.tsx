@@ -8,24 +8,13 @@ import { useInView } from "react-intersection-observer";
 import { fadeIn } from "../../animation/variants";
 import values01 from "../../public/values01.webp";
 import values02 from "../../public/values02.webp";
-
-const values: { title: string; text: string }[] = [
-  {
-    title: "Compromiso con la excelencia",
-    text: "Priorizamos el rigor jurídico desde la primera consulta hasta la resolución final, con análisis profundo y preparación sólida.",
-  },
-  {
-    title: "Empatía y cercanía",
-    text: "Cada caso tiene un contexto personal. Escuchamos con atención y acompañamos con respeto, claridad y foco práctico.",
-  },
-  {
-    title: "Transparencia y comunicación",
-    text: "Vas a recibir avances claros, escenarios realistas y próximos pasos concretos para decidir con información.",
-  },
-];
+import { siteCopy } from "@/i18n/siteCopy";
+import { useLanguage } from "@/providers/LanguageProvider";
 
 const ValuesSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
+  const { language } = useLanguage();
+  const copy = siteCopy[language].values;
 
   return (
     <section
@@ -46,7 +35,7 @@ const ValuesSection = () => {
             className="flex items-center justify-center gap-4 text-2xl font-semibold uppercase tracking-[0.4em] text-zinc-300 md:text-3xl"
             id="Values"
           >
-            Valores del estudio <BsFillPatchCheckFill size={40} />
+            {copy.title} <BsFillPatchCheckFill size={40} />
           </h2>
 
           <div className="flex w-full flex-col-reverse items-center gap-12 lg:flex-row">
@@ -54,7 +43,7 @@ const ValuesSection = () => {
               <div className="absolute -right-10 top-10 hidden h-32 w-32 rounded-full bg-zinc-500/20 blur-3xl lg:block" />
               <Image
                 src={values01}
-                alt="Trabajo jurídico en equipo"
+                alt={copy.imageAltOne}
                 className="h-auto w-full rounded-3xl object-cover shadow-[12px_12px_24px_rgba(0,0,0,0.6)]"
                 sizes="100vw"
                 width={0}
@@ -62,7 +51,7 @@ const ValuesSection = () => {
               />
               <Image
                 src={values02}
-                alt="Asesoramiento legal personalizado"
+                alt={copy.imageAltTwo}
                 className="h-auto w-full rounded-3xl object-cover shadow-[12px_12px_24px_rgba(0,0,0,0.6)]"
                 sizes="100vw"
                 width={0}
@@ -71,7 +60,7 @@ const ValuesSection = () => {
             </div>
 
             <div className="flex w-full flex-col gap-6 lg:w-7/12">
-              {values.map((value, index) => (
+              {copy.items.map((value, index) => (
                 <div
                   key={value.title}
                   className="neo-inset p-6 transition hover:border-zinc-700"

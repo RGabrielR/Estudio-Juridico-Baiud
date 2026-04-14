@@ -12,6 +12,8 @@ import { useInView } from "react-intersection-observer";
 
 import { fadeIn } from "../../animation/variants";
 import Location from "../../public/location.webp";
+import { siteCopy } from "@/i18n/siteCopy";
+import { useLanguage } from "@/providers/LanguageProvider";
 
 const ContactMap = dynamic(() => import("@/components/contact/ContactMap"), {
   ssr: false,
@@ -22,6 +24,8 @@ const ContactMap = dynamic(() => import("@/components/contact/ContactMap"), {
 
 const ContactSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
+  const { language } = useLanguage();
+  const copy = siteCopy[language].contact;
 
   useEffect(() => {
     const registerVisit = async () => {
@@ -52,10 +56,10 @@ const ContactSection = () => {
         <div className="neo-inset flex w-full flex-col gap-6 p-6 text-center text-zinc-100 lg:w-1/2 lg:p-10 lg:text-left">
           <div className="flex flex-col items-center gap-2 text-left lg:items-start">
             <span className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400 lg:text-sm">
-              Contacto
+              {copy.eyebrow}
             </span>
             <h2 className="text-3xl font-black leading-tight text-zinc-100 sm:text-4xl xl:text-5xl">
-              Consultá con Dr. Miguel Alabi
+              {copy.title}
             </h2>
           </div>
 
@@ -63,7 +67,7 @@ const ContactSection = () => {
             <div className="flex flex-wrap items-center justify-center gap-3 text-zinc-300 lg:justify-start">
               <HiLocationMarker size={26} className="text-zinc-300" />
               <p className="max-w-[28ch] text-left leading-relaxed">
-                Avenida Salta 1563, San Miguel de Tucumán, Tucumán, Argentina
+                {copy.address}
               </p>
             </div>
 
@@ -86,7 +90,7 @@ const ContactSection = () => {
                 );
               }}
             >
-              Ver ubicación en Google Maps
+              {copy.mapCta}
             </Button>
             <Button
               className="neo-button h-14 w-full text-base lg:max-w-sm"
@@ -100,7 +104,7 @@ const ContactSection = () => {
                 );
               }}
             >
-              Agendar consulta
+              {copy.cta}
             </Button>
           </div>
         </div>
@@ -112,7 +116,7 @@ const ContactSection = () => {
           <div className="hidden overflow-hidden rounded-3xl border border-zinc-800 lg:block">
             <Image
               src={Location}
-              alt="Ubicación del estudio jurídico Dr. Miguel Alabi"
+              alt={copy.imageAlt}
               sizes="100vw"
               width={0}
               height={0}

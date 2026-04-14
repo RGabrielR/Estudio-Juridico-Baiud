@@ -6,36 +6,13 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { useInView } from "react-intersection-observer";
 
 import { fadeIn } from "../../animation/variants";
-
-const services: { title: string; text: string }[] = [
-  {
-    title: "Consultas legales presenciales y online",
-    text: "Diagnóstico jurídico integral y orientación práctica para decisiones urgentes y estrategia de largo plazo.",
-  },
-  {
-    title: "Litigios y representación judicial",
-    text: "Defensa estratégica en procesos en curso y nuevos reclamos, con seguimiento activo y comunicación clara.",
-  },
-  {
-    title: "Trámites administrativos y fiscales",
-    text: "Gestión completa ante organismos públicos y entes fiscales para reducir demoras y exposición legal.",
-  },
-  {
-    title: "Derecho previsional",
-    text: "Acompañamiento en jubilaciones, pensiones y gestiones previsionales para asegurar el acceso efectivo a derechos adquiridos.",
-  },
-  {
-    title: "Derecho de familia y sucesiones",
-    text: "Asesoramiento en divorcios, alimentos, herencias y particiones con precisión jurídica y criterio humano.",
-  },
-  {
-    title: "Mediación y arbitraje",
-    text: "Métodos alternativos para resolver conflictos de forma eficiente y evitar litigios prolongados cuando el caso lo permite.",
-  },
-];
+import { siteCopy } from "@/i18n/siteCopy";
+import { useLanguage } from "@/providers/LanguageProvider";
 
 const ServicesSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
+  const { language } = useLanguage();
+  const copy = siteCopy[language].services;
 
   return (
     <section
@@ -52,19 +29,18 @@ const ServicesSection = () => {
       >
         <div className="flex flex-col gap-4 text-center lg:text-left">
           <span className="text-xs font-semibold uppercase tracking-[0.45em] text-zinc-400">
-            Servicios legales
+            {copy.eyebrow}
           </span>
           <h2 className="text-3xl font-black text-zinc-100 sm:text-4xl">
-            Asistencia jurídica para personas, familias y empresas
+            {copy.title}
           </h2>
           <p className="text-base font-light leading-relaxed text-zinc-300 md:text-lg">
-            Cobertura integral en derecho civil, laboral, familia, penal y
-            previsional, con ejecución clara y seguimiento constante.
+            {copy.description}
           </p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {services.map((service) => (
+          {copy.items.map((service) => (
             <article
               className="neo-inset flex h-full flex-col gap-3 p-6 text-left transition hover:border-zinc-700"
               key={service.title}
@@ -91,7 +67,7 @@ const ServicesSection = () => {
             );
           }}
         >
-          Solicitar consulta
+          {copy.cta}
         </Button>
       </motion.div>
     </section>
