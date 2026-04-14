@@ -1,17 +1,17 @@
 "use client";
 
-import dynamic from "next/dynamic";
-import Image from "next/image";
 import { useEffect } from "react";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+import Image from "next/image";
 import { HiLocationMarker, HiPhone } from "react-icons/hi";
 import { IoCalendarOutline } from "react-icons/io5";
 import { TbMapStar } from "react-icons/tb";
 import { useInView } from "react-intersection-observer";
 
-import Location from "../../public/location.webp";
 import { fadeIn } from "../../animation/variants";
+import Location from "../../public/location.webp";
 
 const ContactMap = dynamic(() => import("@/components/contact/ContactMap"), {
   ssr: false,
@@ -52,10 +52,10 @@ const ContactSection = () => {
         <div className="neo-inset flex w-full flex-col gap-6 p-6 text-center text-zinc-100 lg:w-1/2 lg:p-10 lg:text-left">
           <div className="flex flex-col items-center gap-2 text-left lg:items-start">
             <span className="text-xs font-semibold uppercase tracking-[0.35em] text-zinc-400 lg:text-sm">
-              Contact
+              Contacto
             </span>
             <h2 className="text-3xl font-black leading-tight text-zinc-100 sm:text-4xl xl:text-5xl">
-              Dr. Miguel Alabi Law Office
+              Consultá con Dr. Miguel Alabi
             </h2>
           </div>
 
@@ -63,7 +63,7 @@ const ContactSection = () => {
             <div className="flex flex-wrap items-center justify-center gap-3 text-zinc-300 lg:justify-start">
               <HiLocationMarker size={26} className="text-zinc-300" />
               <p className="max-w-[28ch] text-left leading-relaxed">
-                Avenida Salta 1563, San Miguel de Tucuman, Tucuman, Argentina
+                Avenida Salta 1563, San Miguel de Tucumán, Tucumán, Argentina
               </p>
             </div>
 
@@ -76,7 +76,9 @@ const ContactSection = () => {
           <div className="flex flex-col items-center justify-center gap-3 lg:items-start">
             <Button
               className="neo-button h-14 w-full text-base lg:max-w-sm"
-              endContent={<TbMapStar size={24} className="ml-2 text-zinc-100" />}
+              endContent={
+                <TbMapStar size={24} className="ml-2 text-zinc-100" />
+              }
               onClick={() => {
                 window.open(
                   "https://www.google.com/maps?q=-26.8086267,-65.2052151",
@@ -84,11 +86,13 @@ const ContactSection = () => {
                 );
               }}
             >
-              Open in Google Maps
+              Ver ubicación en Google Maps
             </Button>
             <Button
               className="neo-button h-14 w-full text-base lg:max-w-sm"
-              endContent={<IoCalendarOutline size={24} className="ml-2 text-zinc-100" />}
+              endContent={
+                <IoCalendarOutline size={24} className="ml-2 text-zinc-100" />
+              }
               onClick={() => {
                 window.open(
                   "https://api.whatsapp.com/send/?phone=%2B543814099177&text&type=phone_number&app_absent=0",
@@ -96,7 +100,7 @@ const ContactSection = () => {
                 );
               }}
             >
-              Book Consultation
+              Agendar consulta
             </Button>
           </div>
         </div>
@@ -108,7 +112,7 @@ const ContactSection = () => {
           <div className="hidden overflow-hidden rounded-3xl border border-zinc-800 lg:block">
             <Image
               src={Location}
-              alt="Dr Miguel Alabi office illustration"
+              alt="Ubicación del estudio jurídico Dr. Miguel Alabi"
               sizes="100vw"
               width={0}
               height={0}

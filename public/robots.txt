@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://www.estudiolcb.com.ar/sitemap.xml
 
 # Google bots
@@ -8,6 +9,25 @@ Allow: /
 
 # Bing bot
 User-agent: Bingbot
+Allow: /
+
+# AI search and assistant bots
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 # Block bad bots

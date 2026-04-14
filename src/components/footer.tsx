@@ -8,16 +8,21 @@ const Footer = () => {
       <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-6 px-6 text-center text-sm text-zinc-400 sm:flex-row sm:text-left">
         <Link href="/" className="flex items-center gap-3">
           <div className="rounded-2xl border border-zinc-700 bg-zinc-950/80 px-4 py-2 shadow-[8px_8px_20px_rgba(0,0,0,0.5),inset_1px_1px_0_rgba(113,113,122,0.15)]">
-            <p className="text-sm font-black tracking-[0.2em] text-zinc-100">ALABI</p>
+            <p className="text-sm font-black tracking-[0.2em] text-zinc-100">
+              ALABI
+            </p>
             <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-zinc-400">
-              Estudio Juridico
+              Estudio Jurídico
             </p>
           </div>
         </Link>
         <div className="space-y-1">
-          <p>&copy; {currentYear} Dr. Miguel Alabi Law Office. All rights reserved.</p>
           <p>
-            Avenida Salta 1563 · San Miguel de Tucuman ·{" "}
+            &copy; {currentYear} Estudio Jurídico Dr. Miguel Alabi. Todos los
+            derechos reservados.
+          </p>
+          <p>
+            Avenida Salta 1563 · San Miguel de Tucumán ·{" "}
             <a
               href="mailto:alabimiguel@gmail.com"
               className="font-medium text-zinc-200 hover:text-zinc-100"

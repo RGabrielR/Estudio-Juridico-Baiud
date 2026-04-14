@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import { useInView } from "react-intersection-observer";
 
@@ -11,16 +11,16 @@ import values02 from "../../public/values02.webp";
 
 const values: { title: string; text: string }[] = [
   {
-    title: "Commitment to excellence",
-    text: "We prioritize legal rigor from first consultation to final resolution, with deep analysis and strong case preparation.",
+    title: "Compromiso con la excelencia",
+    text: "Priorizamos el rigor jurídico desde la primera consulta hasta la resolución final, con análisis profundo y preparación sólida.",
   },
   {
-    title: "Empathy and proximity",
-    text: "Every case has a personal context. We listen carefully and provide legal support with respect, clarity and practical focus.",
+    title: "Empatía y cercanía",
+    text: "Cada caso tiene un contexto personal. Escuchamos con atención y acompañamos con respeto, claridad y foco práctico.",
   },
   {
-    title: "Transparency and communication",
-    text: "You receive clear updates, realistic scenarios and understandable next steps to make informed decisions throughout the process.",
+    title: "Transparencia y comunicación",
+    text: "Vas a recibir avances claros, escenarios realistas y próximos pasos concretos para decidir con información.",
   },
 ];
 
@@ -46,7 +46,7 @@ const ValuesSection = () => {
             className="flex items-center justify-center gap-4 text-2xl font-semibold uppercase tracking-[0.4em] text-zinc-300 md:text-3xl"
             id="Values"
           >
-            Core Values <BsFillPatchCheckFill size={40} />
+            Valores del estudio <BsFillPatchCheckFill size={40} />
           </h2>
 
           <div className="flex w-full flex-col-reverse items-center gap-12 lg:flex-row">
@@ -54,7 +54,7 @@ const ValuesSection = () => {
               <div className="absolute -right-10 top-10 hidden h-32 w-32 rounded-full bg-zinc-500/20 blur-3xl lg:block" />
               <Image
                 src={values01}
-                alt="Legal teamwork"
+                alt="Trabajo jurídico en equipo"
                 className="h-auto w-full rounded-3xl object-cover shadow-[12px_12px_24px_rgba(0,0,0,0.6)]"
                 sizes="100vw"
                 width={0}
@@ -62,7 +62,7 @@ const ValuesSection = () => {
               />
               <Image
                 src={values02}
-                alt="Legal counseling session"
+                alt="Asesoramiento legal personalizado"
                 className="h-auto w-full rounded-3xl object-cover shadow-[12px_12px_24px_rgba(0,0,0,0.6)]"
                 sizes="100vw"
                 width={0}
@@ -79,8 +79,12 @@ const ValuesSection = () => {
                   <span className="text-lg font-semibold text-zinc-300">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-2 text-2xl font-semibold text-zinc-100">{value.title}</h3>
-                  <p className="mt-3 text-base font-light text-zinc-300">{value.text}</p>
+                  <h3 className="mt-2 text-2xl font-semibold text-zinc-100">
+                    {value.title}
+                  </h3>
+                  <p className="mt-3 text-base font-light text-zinc-300">
+                    {value.text}
+                  </p>
                 </div>
               ))}
             </div>

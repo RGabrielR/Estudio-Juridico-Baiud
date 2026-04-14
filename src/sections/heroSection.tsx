@@ -1,13 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import { Button } from "@nextui-org/react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { IoCalendarOutline } from "react-icons/io5";
 import { useInView } from "react-intersection-observer";
 
-import heroBanner from "../../public/herobanner.png";
 import { fadeIn } from "../../animation/variants";
+import heroBanner from "../../public/herobanner.png";
 
 const HeroSection = () => {
   const [ref, inView] = useInView({ triggerOnce: false });
@@ -29,7 +29,7 @@ const HeroSection = () => {
           <div className="absolute inset-0 opacity-30">
             <Image
               src={heroBanner}
-              alt="Dr Miguel Alabi law office"
+              alt="Estudio jurídico Dr. Miguel Alabi en Tucumán"
               fill
               priority
               sizes="100vw"
@@ -40,24 +40,28 @@ const HeroSection = () => {
 
           <div className="neo-panel relative flex w-full flex-col items-center justify-center gap-8 p-10 text-center lg:w-7/12 lg:text-left">
             <span className="text-xs font-semibold uppercase tracking-[0.45em] text-zinc-400">
-              Comprehensive Legal Defense
+              Abogado en Tucumán
             </span>
             <h1 className="text-4xl font-black leading-tight text-zinc-100 md:text-6xl">
-              Dr. Miguel Alabi Law Office
+              Dr. Miguel Alabi, abogado para personas y empresas
             </h1>
             <h2 className="text-2xl font-semibold leading-tight text-zinc-300 md:text-3xl">
-              Civil, Family and Labor Law for Individuals and Businesses
+              Derecho laboral, civil, de familia y penal en San Miguel de
+              Tucumán
             </h2>
             <h3 className="text-lg font-light text-zinc-300 md:text-xl">
-              In-person and remote legal consultations in San Miguel de Tucuman
+              Consultas presenciales y online para clientes en Tucumán,
+              Argentina y el exterior
             </h3>
             <p className="text-base font-light text-zinc-300 md:text-lg">
-              Strategic legal guidance with close client support, clear communication,
-              and practical solutions for every stage of your case.
+              Asesoramiento jurídico claro, seguimiento cercano y estrategia
+              práctica para cada etapa de tu caso.
             </p>
             <Button
               className="neo-button h-14 w-full max-w-sm text-base lg:justify-start"
-              endContent={<IoCalendarOutline size={24} className="ml-2 text-zinc-100" />}
+              endContent={
+                <IoCalendarOutline size={24} className="ml-2 text-zinc-100" />
+              }
               onClick={() => {
                 window.open(
                   "https://api.whatsapp.com/send/?phone=%2B543814099177&text&type=phone_number&app_absent=0",
@@ -65,15 +69,28 @@ const HeroSection = () => {
                 );
               }}
             >
-              Schedule Consultation
+              Agendar consulta por WhatsApp
             </Button>
+          </div>
+
+          <div className="neo-panel relative flex w-full max-w-md items-center justify-center overflow-hidden p-4 lg:hidden">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-zinc-950/50">
+              <Image
+                src={heroBanner}
+                alt="Dr. Miguel Alabi, abogado en Tucumán"
+                fill
+                sizes="(max-width: 1023px) 100vw, 340px"
+                className="object-cover object-center"
+                priority
+              />
+            </div>
           </div>
 
           <div className="neo-panel relative hidden w-full max-w-xl items-center justify-center overflow-hidden p-4 lg:flex lg:w-5/12">
             <div className="relative aspect-[2/3] w-full max-w-[340px] overflow-hidden rounded-3xl bg-zinc-950/50">
               <Image
                 src={heroBanner}
-                alt="Dr Miguel Alabi legal services"
+                alt="Dr. Miguel Alabi, abogado en Tucumán"
                 fill
                 sizes="(min-width: 1280px) 340px, (min-width: 1024px) 28vw, 100vw"
                 className="object-cover object-center"

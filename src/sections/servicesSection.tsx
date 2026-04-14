@@ -9,28 +9,28 @@ import { fadeIn } from "../../animation/variants";
 
 const services: { title: string; text: string }[] = [
   {
-    title: "In-person and remote legal consultations",
-    text: "Comprehensive legal diagnosis and practical guidance for urgent decisions and long-term strategy.",
+    title: "Consultas legales presenciales y online",
+    text: "Diagnóstico jurídico integral y orientación práctica para decisiones urgentes y estrategia de largo plazo.",
   },
   {
-    title: "Litigation and legal representation",
-    text: "Strategic defense in ongoing and new cases with active follow-up and clear reporting.",
+    title: "Litigios y representación judicial",
+    text: "Defensa estratégica en procesos en curso y nuevos reclamos, con seguimiento activo y comunicación clara.",
   },
   {
-    title: "Administrative and tax procedures",
-    text: "End-to-end management before public entities and tax agencies, reducing delays and legal exposure.",
+    title: "Trámites administrativos y fiscales",
+    text: "Gestión completa ante organismos públicos y entes fiscales para reducir demoras y exposición legal.",
   },
   {
-    title: "Social security law",
-    text: "Support for pension and retirement filings to secure effective access to acquired rights.",
+    title: "Derecho previsional",
+    text: "Acompañamiento en jubilaciones, pensiones y gestiones previsionales para asegurar el acceso efectivo a derechos adquiridos.",
   },
   {
-    title: "Family and succession law",
-    text: "Guidance for inheritance, estate partition and family agreements with legal precision and empathy.",
+    title: "Derecho de familia y sucesiones",
+    text: "Asesoramiento en divorcios, alimentos, herencias y particiones con precisión jurídica y criterio humano.",
   },
   {
-    title: "Mediation and arbitration",
-    text: "Alternative dispute resolution to reach efficient agreements and avoid prolonged litigation.",
+    title: "Mediación y arbitraje",
+    text: "Métodos alternativos para resolver conflictos de forma eficiente y evitar litigios prolongados cuando el caso lo permite.",
   },
 ];
 
@@ -52,14 +52,14 @@ const ServicesSection = () => {
       >
         <div className="flex flex-col gap-4 text-center lg:text-left">
           <span className="text-xs font-semibold uppercase tracking-[0.45em] text-zinc-400">
-            Services
+            Servicios legales
           </span>
           <h2 className="text-3xl font-black text-zinc-100 sm:text-4xl">
-            Practical legal solutions for complex decisions
+            Asistencia jurídica para personas, familias y empresas
           </h2>
           <p className="text-base font-light leading-relaxed text-zinc-300 md:text-lg">
-            Integrated legal support across civil, labor, family and criminal areas,
-            with clear execution and measurable progress.
+            Cobertura integral en derecho civil, laboral, familia, penal y
+            previsional, con ejecución clara y seguimiento constante.
           </p>
         </div>
 
@@ -69,15 +69,21 @@ const ServicesSection = () => {
               className="neo-inset flex h-full flex-col gap-3 p-6 text-left transition hover:border-zinc-700"
               key={service.title}
             >
-              <h3 className="text-lg font-semibold text-zinc-100">{service.title}</h3>
-              <p className="text-sm font-light leading-relaxed text-zinc-300">{service.text}</p>
+              <h3 className="text-lg font-semibold text-zinc-100">
+                {service.title}
+              </h3>
+              <p className="text-sm font-light leading-relaxed text-zinc-300">
+                {service.text}
+              </p>
             </article>
           ))}
         </div>
 
         <Button
           className="neo-button h-14 w-full max-w-sm self-center text-base"
-          endContent={<IoCalendarOutline size={24} className="ml-2 text-zinc-100" />}
+          endContent={
+            <IoCalendarOutline size={24} className="ml-2 text-zinc-100" />
+          }
           onClick={() => {
             window.open(
               "https://api.whatsapp.com/send/?phone=%2B543814099177&text&type=phone_number&app_absent=0",
@@ -85,7 +91,7 @@ const ServicesSection = () => {
             );
           }}
         >
-          Book a Consultation
+          Solicitar consulta
         </Button>
       </motion.div>
     </section>

@@ -1,28 +1,28 @@
 "use client";
 
-import { FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
 import {
+  Button,
+  Link,
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
-  Button,
-  NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  NavbarMenuToggle,
 } from "@nextui-org/react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems: { title: string; href: string }[] = [
-    { title: "About", href: "#About" },
-    { title: "Values", href: "#Values" },
-    { title: "Services", href: "#Services" },
-    { title: "Articles", href: "/articles" },
-    { title: "Contact", href: "#Contact" },
+    { title: "Estudio", href: "#About" },
+    { title: "Valores", href: "#Values" },
+    { title: "Servicios", href: "#Services" },
+    { title: "Artículos", href: "/articles" },
+    { title: "Contacto", href: "#Contact" },
   ];
 
   return (
@@ -33,7 +33,7 @@ const Header = () => {
     >
       <NavbarContent justify="start">
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
           className="text-zinc-200 md:hidden"
         />
         <Link href="/">
@@ -43,7 +43,7 @@ const Header = () => {
                 ALABI
               </p>
               <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-zinc-400">
-                Estudio Juridico
+                Estudio Jurídico
               </p>
             </div>
           </NavbarBrand>
