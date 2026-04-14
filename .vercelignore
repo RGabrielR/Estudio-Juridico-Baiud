@@ -16,6 +16,7 @@
 # PNG originals (we use WebP)
 /public/*.png
 !/public/herobanner.png
+!/public/logo.png
 
 # Node modules (Vercel installs its own)
 node_modules
